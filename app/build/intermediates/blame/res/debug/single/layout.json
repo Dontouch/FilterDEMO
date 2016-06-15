@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/activity_home.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/activity_welcome.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/view_titlebar.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_titlebar.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/activity_main.xml"
+    }
+]

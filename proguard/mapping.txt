@@ -1,0 +1,86 @@
+com.flamingo.filterdemo.core.AbsHandler -> com.flamingo.filterdemo.a.a:
+    void handle(com.flamingo.filterdemo.core.MessageData) -> a
+com.flamingo.filterdemo.core.AbsTrigger -> com.flamingo.filterdemo.a.b:
+    com.flamingo.filterdemo.core.AbsTrigger$ITriggerListener mListener -> a
+    void notify(com.flamingo.filterdemo.core.MessageData) -> a
+    void enable() -> a
+    void setListener(com.flamingo.filterdemo.core.AbsTrigger$ITriggerListener) -> a
+com.flamingo.filterdemo.core.AbsTrigger$ITriggerListener -> com.flamingo.filterdemo.a.c:
+    void onMessageComing(com.flamingo.filterdemo.core.MessageData) -> a
+com.flamingo.filterdemo.core.BlockerBuilder -> com.flamingo.filterdemo.a.d:
+    com.flamingo.filterdemo.core.BlockerBuilder$BlockerImpl mBlocker -> a
+    com.flamingo.filterdemo.core.IBlocker create() -> a
+    com.flamingo.filterdemo.core.BlockerBuilder addFilters(com.flamingo.filterdemo.core.IFilter) -> a
+    com.flamingo.filterdemo.core.BlockerBuilder setTrigger(com.flamingo.filterdemo.core.AbsTrigger) -> a
+    com.flamingo.filterdemo.core.BlockerBuilder setHandler(com.flamingo.filterdemo.core.AbsHandler) -> a
+com.flamingo.filterdemo.core.BlockerBuilder$1 -> com.flamingo.filterdemo.a.e:
+    com.flamingo.filterdemo.core.BlockerBuilder this$0 -> a
+    void enable() -> a
+com.flamingo.filterdemo.core.BlockerBuilder$2 -> com.flamingo.filterdemo.a.f:
+    com.flamingo.filterdemo.core.BlockerBuilder this$0 -> a
+com.flamingo.filterdemo.core.BlockerBuilder$BlockerImpl -> com.flamingo.filterdemo.a.g:
+    com.flamingo.filterdemo.core.AbsTrigger mTrigger -> a
+    java.util.ArrayList mFilters -> b
+    com.flamingo.filterdemo.core.AbsHandler mHandler -> c
+    void enable() -> a
+    void onMessageComing(com.flamingo.filterdemo.core.MessageData) -> a
+    void addFilters(com.flamingo.filterdemo.core.IFilter) -> a
+    void setTrigger(com.flamingo.filterdemo.core.AbsTrigger) -> a
+    void setHandler(com.flamingo.filterdemo.core.AbsHandler) -> a
+com.flamingo.filterdemo.core.IBlocker -> com.flamingo.filterdemo.a.h:
+    void enable() -> a
+com.flamingo.filterdemo.core.IFilter -> com.flamingo.filterdemo.a.i:
+    int onFiltering(com.flamingo.filterdemo.core.MessageData) -> a
+com.flamingo.filterdemo.core.MessageData -> com.flamingo.filterdemo.a.j:
+    com.flamingo.filterdemo.core.MessageData$StringKeySparseIntArray mIntDatas -> a
+    com.flamingo.filterdemo.core.MessageData$StringKeySparseArray mStringDatas -> b
+    int getInt(java.lang.String) -> a
+    int setInt(java.lang.String,int) -> a
+    java.lang.String getString(java.lang.String,java.lang.String) -> a
+    java.lang.String getString(java.lang.String) -> b
+    java.lang.String setString(java.lang.String,java.lang.String) -> b
+com.flamingo.filterdemo.core.MessageData$StringKeySparseArray -> com.flamingo.filterdemo.a.k:
+    java.lang.Object get(java.lang.String,java.lang.Object) -> a
+    java.lang.Object get(java.lang.String) -> a
+    java.lang.Object set(java.lang.String,java.lang.Object) -> b
+com.flamingo.filterdemo.core.MessageData$StringKeySparseIntArray -> com.flamingo.filterdemo.a.l:
+    int get(java.lang.String,int) -> a
+    int get(java.lang.String) -> a
+    int set(java.lang.String,int) -> b
+com.flamingo.filterdemo.demo.MainActivity -> com.flamingo.filterdemo.demo.MainActivity:
+    android.widget.Button mBTEmulate -> a
+    android.widget.TextView mTVPhone -> b
+    android.widget.ListView mLVHistory -> c
+    java.util.LinkedList mHistoryData -> d
+    com.flamingo.filterdemo.core.IBlocker mBlocker -> e
+    com.flamingo.filterdemo.core.AbsTrigger mTrigger -> f
+    com.flamingo.filterdemo.core.AbsHandler mHandler -> g
+    android.widget.ListAdapter mAdapter -> h
+    android.os.Handler mUIHandler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void setupBlocker() -> a
+    void onClick(android.view.View) -> onClick
+    android.os.Handler access$0(com.flamingo.filterdemo.demo.MainActivity) -> a
+    java.util.LinkedList access$1(com.flamingo.filterdemo.demo.MainActivity) -> b
+    android.widget.ListView access$2(com.flamingo.filterdemo.demo.MainActivity) -> c
+    android.widget.ListAdapter access$3(com.flamingo.filterdemo.demo.MainActivity) -> d
+com.flamingo.filterdemo.demo.MainActivity$1 -> com.flamingo.filterdemo.demo.a:
+    com.flamingo.filterdemo.demo.MainActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.flamingo.filterdemo.demo.MainActivity$DemoHandler -> com.flamingo.filterdemo.demo.b:
+    com.flamingo.filterdemo.demo.MainActivity this$0 -> a
+    void handle(com.flamingo.filterdemo.core.MessageData) -> a
+com.flamingo.filterdemo.demo.MainActivity$DemoTrigger -> com.flamingo.filterdemo.demo.c:
+    boolean mState -> b
+    com.flamingo.filterdemo.demo.MainActivity this$0 -> a
+    void enable() -> a
+    void emulateInComingCall(java.lang.String) -> a
+com.flamingo.filterdemo.impl.NumeralFilter -> com.flamingo.filterdemo.b.a:
+    java.lang.String[] mNumbers -> a
+    int mOpcode -> b
+    int onFiltering(com.flamingo.filterdemo.core.MessageData) -> a
+com.flamingo.filterdemo.impl.PrefixFilter -> com.flamingo.filterdemo.b.b:
+    java.lang.String[] mPrefixs -> a
+    int mOpcode -> b
+    int onFiltering(com.flamingo.filterdemo.core.MessageData) -> a

@@ -1,0 +1,2582 @@
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/a
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x421
+    = public abstract class com.flamingo.filterdemo.a.a extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 12):
+  + Class [com/flamingo/filterdemo/a/a]
+  + Class [java/lang/Object]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/a]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #3
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)V
+    Access flags: 0x1
+      = public void a(com.flamingo.filterdemo.a.j)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x421
+    = public abstract class com.flamingo.filterdemo.a.b extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 21):
+  + Class [com/flamingo/filterdemo/a/b]
+  + Class [com/flamingo/filterdemo/a/c]
+  + Class [java/lang/Object]
+  + Fieldref [com/flamingo/filterdemo/a/b.a Lcom/flamingo/filterdemo/a/c;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + InterfaceMethodref [com/flamingo/filterdemo/a/c.a (Lcom/flamingo/filterdemo/a/j;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/j;)V]
+  + NameAndType [a Lcom/flamingo/filterdemo/a/c;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/c;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/a/c;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/b]
+  + Utf8 [com/flamingo/filterdemo/a/c]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 1):
+  + Field:        a Lcom/flamingo/filterdemo/a/c;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.c a
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #5
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)V
+    Access flags: 0x4
+      = protected void a(com.flamingo.filterdemo.a.j)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #4
+        + Fieldref [com/flamingo/filterdemo/a/b.a Lcom/flamingo/filterdemo/a/c;]
+      [4] ifnull +13 (target=17)
+      [7] aload_0 v0
+      [8] getfield #4
+        + Fieldref [com/flamingo/filterdemo/a/b.a Lcom/flamingo/filterdemo/a/c;]
+      [11] aload_1 v1
+      [12] invokeinterface #6
+        + InterfaceMethodref [com/flamingo/filterdemo/a/c.a (Lcom/flamingo/filterdemo/a/j;)V]
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [17] Var: ..., Stack: (empty)
+  + Method:       a()V
+    Access flags: 0x404
+      = protected abstract void a()
+  + Method:       a(Lcom/flamingo/filterdemo/a/c;)V
+    Access flags: 0x0
+      = void a(com.flamingo.filterdemo.a.c)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #4
+        + Fieldref [com/flamingo/filterdemo/a/b.a Lcom/flamingo/filterdemo/a/c;]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/c
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x600
+    = interface com.flamingo.filterdemo.a.c extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 7):
+  + Class [com/flamingo/filterdemo/a/c]
+  + Class [java/lang/Object]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)V]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/c]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)V
+    Access flags: 0x401
+      = public abstract void a(com.flamingo.filterdemo.a.j)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/d
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.flamingo.filterdemo.a.d extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 38):
+  + Class [com/flamingo/filterdemo/a/d]
+  + Class [com/flamingo/filterdemo/a/e]
+  + Class [com/flamingo/filterdemo/a/f]
+  + Class [com/flamingo/filterdemo/a/g]
+  + Class [java/lang/Object]
+  + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+  + Methodref [com/flamingo/filterdemo/a/e.<init> (Lcom/flamingo/filterdemo/a/d;)V]
+  + Methodref [com/flamingo/filterdemo/a/f.<init> (Lcom/flamingo/filterdemo/a/d;)V]
+  + Methodref [com/flamingo/filterdemo/a/g.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/a;)V]
+  + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/b;)V]
+  + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/i;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/flamingo/filterdemo/a/d;)V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/a;)V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/b;)V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/i;)V]
+  + NameAndType [a Lcom/flamingo/filterdemo/a/g;]
+  + Utf8 [()Lcom/flamingo/filterdemo/a/h;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/a;)Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/a;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/b;)Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/b;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/d;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/i;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/a/g;]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/d]
+  + Utf8 [com/flamingo/filterdemo/a/e]
+  + Utf8 [com/flamingo/filterdemo/a/f]
+  + Utf8 [com/flamingo/filterdemo/a/g]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 1):
+  + Field:        a Lcom/flamingo/filterdemo/a/g;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.g a
+
+Methods (count = 5):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 46, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #13
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] new #4
+        + Class [com/flamingo/filterdemo/a/g]
+      [8] dup
+      [9] invokespecial #9
+        + Methodref [com/flamingo/filterdemo/a/g.<init> ()V]
+      [12] putfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [15] aload_0 v0
+      [16] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [19] new #2
+        + Class [com/flamingo/filterdemo/a/e]
+      [22] dup
+      [23] aload_0 v0
+      [24] invokespecial #7
+        + Methodref [com/flamingo/filterdemo/a/e.<init> (Lcom/flamingo/filterdemo/a/d;)V]
+      [27] invokevirtual #11
+        + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/b;)V]
+      [30] aload_0 v0
+      [31] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [34] new #3
+        + Class [com/flamingo/filterdemo/a/f]
+      [37] dup
+      [38] aload_0 v0
+      [39] invokespecial #8
+        + Methodref [com/flamingo/filterdemo/a/f.<init> (Lcom/flamingo/filterdemo/a/d;)V]
+      [42] invokevirtual #10
+        + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/a;)V]
+      [45] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Lcom/flamingo/filterdemo/a/h;
+    Access flags: 0x1
+      = public com.flamingo.filterdemo.a.h a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;
+    Access flags: 0x1
+      = public com.flamingo.filterdemo.a.d a(com.flamingo.filterdemo.a.i)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [4] aload_1 v1
+      [5] invokevirtual #12
+        + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/i;)V]
+      [8] aload_0 v0
+      [9] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/b;)Lcom/flamingo/filterdemo/a/d;
+    Access flags: 0x1
+      = public com.flamingo.filterdemo.a.d a(com.flamingo.filterdemo.a.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [4] aload_1 v1
+      [5] invokevirtual #11
+        + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/b;)V]
+      [8] aload_0 v0
+      [9] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/a;)Lcom/flamingo/filterdemo/a/d;
+    Access flags: 0x1
+      = public com.flamingo.filterdemo.a.d a(com.flamingo.filterdemo.a.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/d.a Lcom/flamingo/filterdemo/a/g;]
+      [4] aload_1 v1
+      [5] invokevirtual #10
+        + Methodref [com/flamingo/filterdemo/a/g.a (Lcom/flamingo/filterdemo/a/a;)V]
+      [8] aload_0 v0
+      [9] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/e
+  Superclass:    com/flamingo/filterdemo/a/b
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.a.e extends com.flamingo.filterdemo.a.b
+
+Interfaces (count = 0):
+
+Constant Pool (count = 15):
+  + Class [com/flamingo/filterdemo/a/b]
+  + Class [com/flamingo/filterdemo/a/e]
+  + Fieldref [com/flamingo/filterdemo/a/e.a Lcom/flamingo/filterdemo/a/d;]
+  + Methodref [com/flamingo/filterdemo/a/b.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/d;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/b]
+  + Utf8 [com/flamingo/filterdemo/a/e]
+
+Fields (count = 1):
+  + Field:        a Lcom/flamingo/filterdemo/a/d;
+    Access flags: 0x1010
+      = final synthetic com.flamingo.filterdemo.a.d a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/flamingo/filterdemo/a/d;)V
+    Access flags: 0x0
+      = e(com.flamingo.filterdemo.a.d)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #3
+        + Fieldref [com/flamingo/filterdemo/a/e.a Lcom/flamingo/filterdemo/a/d;]
+      [5] aload_0 v0
+      [6] invokespecial #4
+        + Methodref [com/flamingo/filterdemo/a/b.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x4
+      = protected void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 1, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/f
+  Superclass:    com/flamingo/filterdemo/a/a
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.a.f extends com.flamingo.filterdemo.a.a
+
+Interfaces (count = 0):
+
+Constant Pool (count = 15):
+  + Class [com/flamingo/filterdemo/a/a]
+  + Class [com/flamingo/filterdemo/a/f]
+  + Fieldref [com/flamingo/filterdemo/a/f.a Lcom/flamingo/filterdemo/a/d;]
+  + Methodref [com/flamingo/filterdemo/a/a.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/d;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/a]
+  + Utf8 [com/flamingo/filterdemo/a/f]
+
+Fields (count = 1):
+  + Field:        a Lcom/flamingo/filterdemo/a/d;
+    Access flags: 0x1010
+      = final synthetic com.flamingo.filterdemo.a.d a
+
+Methods (count = 1):
+  - Method:       <init>(Lcom/flamingo/filterdemo/a/d;)V
+    Access flags: 0x0
+      = f(com.flamingo.filterdemo.a.d)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #3
+        + Fieldref [com/flamingo/filterdemo/a/f.a Lcom/flamingo/filterdemo/a/d;]
+      [5] aload_0 v0
+      [6] invokespecial #4
+        + Methodref [com/flamingo/filterdemo/a/a.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/g
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x30
+    = final class com.flamingo.filterdemo.a.g extends java.lang.Object
+
+Interfaces (count = 2):
+  + Class [com/flamingo/filterdemo/a/c]
+  + Class [com/flamingo/filterdemo/a/h]
+
+Constant Pool (count = 82):
+  + String [key_op]
+  + String [mTrigger must be set.]
+  + Class [com/flamingo/filterdemo/a/a]
+  + Class [com/flamingo/filterdemo/a/b]
+  + Class [com/flamingo/filterdemo/a/c]
+  + Class [com/flamingo/filterdemo/a/g]
+  + Class [com/flamingo/filterdemo/a/h]
+  + Class [com/flamingo/filterdemo/a/i]
+  + Class [com/flamingo/filterdemo/a/j]
+  + Class [java/lang/Object]
+  + Class [java/lang/RuntimeException]
+  + Class [java/util/ArrayList]
+  + Class [java/util/Iterator]
+  + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+  + Fieldref [com/flamingo/filterdemo/a/g.b Ljava/util/ArrayList;]
+  + Fieldref [com/flamingo/filterdemo/a/g.c Lcom/flamingo/filterdemo/a/a;]
+  + Methodref [com/flamingo/filterdemo/a/a.a (Lcom/flamingo/filterdemo/a/j;)V]
+  + Methodref [com/flamingo/filterdemo/a/b.a ()V]
+  + Methodref [com/flamingo/filterdemo/a/b.a (Lcom/flamingo/filterdemo/a/c;)V]
+  + Methodref [com/flamingo/filterdemo/a/j.a (Ljava/lang/String;I)I]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/String;)V]
+  + Methodref [java/util/ArrayList.<init> ()V]
+  + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
+  + Methodref [java/util/ArrayList.iterator ()Ljava/util/Iterator;]
+  + InterfaceMethodref [com/flamingo/filterdemo/a/i.a (Lcom/flamingo/filterdemo/a/j;)I]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/c;)V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/j;)I]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/j;)V]
+  + NameAndType [a (Ljava/lang/String;I)I]
+  + NameAndType [a Lcom/flamingo/filterdemo/a/b;]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [b Ljava/util/ArrayList;]
+  + NameAndType [c Lcom/flamingo/filterdemo/a/a;]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/a;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/b;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/c;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/i;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)I]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)V]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;I)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/a/a;]
+  + Utf8 [Lcom/flamingo/filterdemo/a/b;]
+  + Utf8 [Ljava/util/ArrayList;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/flamingo/filterdemo/a/a]
+  + Utf8 [com/flamingo/filterdemo/a/b]
+  + Utf8 [com/flamingo/filterdemo/a/c]
+  + Utf8 [com/flamingo/filterdemo/a/g]
+  + Utf8 [com/flamingo/filterdemo/a/h]
+  + Utf8 [com/flamingo/filterdemo/a/i]
+  + Utf8 [com/flamingo/filterdemo/a/j]
+  + Utf8 [hasNext]
+  + Utf8 [iterator]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/RuntimeException]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [key_op]
+  + Utf8 [mTrigger must be set.]
+  + Utf8 [next]
+
+Fields (count = 3):
+  + Field:        a Lcom/flamingo/filterdemo/a/b;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.b a
+  + Field:        b Ljava/util/ArrayList;
+    Access flags: 0x2
+      = private java.util.ArrayList b
+  + Field:        c Lcom/flamingo/filterdemo/a/a;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.a c
+
+Methods (count = 6):
+  - Method:       <init>()V
+    Access flags: 0x0
+      = g()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #21
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] new #12
+        + Class [java/util/ArrayList]
+      [8] dup
+      [9] invokespecial #23
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [12] putfield #15
+        + Fieldref [com/flamingo/filterdemo/a/g.b Ljava/util/ArrayList;]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x1
+      = public void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 28, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [4] ifnull +13 (target=17)
+      [7] aload_0 v0
+      [8] getfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [11] invokevirtual #18
+        + Methodref [com/flamingo/filterdemo/a/b.a ()V]
+      [14] goto +13 (target=27)
+      [17] new #11
+        + Class [java/lang/RuntimeException]
+      [20] dup
+      [21] ldc #2
+        + String [mTrigger must be set.]
+      [23] invokespecial #22
+        + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/String;)V]
+      [26] athrow
+      [27] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [17] Var: ..., Stack: (empty)
+        - [27] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)V
+    Access flags: 0x1
+      = public void a(com.flamingo.filterdemo.a.j)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 79, locals = 5, stack = 3):
+      [0] iconst_2
+      [1] istore_2 v2
+      [2] aload_0 v0
+      [3] getfield #15
+        + Fieldref [com/flamingo/filterdemo/a/g.b Ljava/util/ArrayList;]
+      [6] invokevirtual #25
+        + Methodref [java/util/ArrayList.iterator ()Ljava/util/Iterator;]
+      [9] astore v4
+      [11] goto +34 (target=45)
+      [14] aload v4
+      [16] invokeinterface #28
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [21] checkcast #8
+        + Class [com/flamingo/filterdemo/a/i]
+      [24] astore_3 v3
+      [25] aload_3 v3
+      [26] aload_1 v1
+      [27] invokeinterface #26
+        + InterfaceMethodref [com/flamingo/filterdemo/a/i.a (Lcom/flamingo/filterdemo/a/j;)I]
+      [32] istore_2 v2
+      [33] iload_2 v2
+      [34] iconst_2
+      [35] ificmpeq +20 (target=55)
+      [38] iload_2 v2
+      [39] ifne +6 (target=45)
+      [42] goto +13 (target=55)
+      [45] aload v4
+      [47] invokeinterface #27
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [52] ifne -38 (target=14)
+      [55] aload_1 v1
+      [56] ldc #1
+        + String [key_op]
+      [58] iload_2 v2
+      [59] invokevirtual #20
+        + Methodref [com/flamingo/filterdemo/a/j.a (Ljava/lang/String;I)I]
+      [62] pop
+      [63] aload_0 v0
+      [64] getfield #16
+        + Fieldref [com/flamingo/filterdemo/a/g.c Lcom/flamingo/filterdemo/a/a;]
+      [67] ifnull +11 (target=78)
+      [70] aload_0 v0
+      [71] getfield #16
+        + Fieldref [com/flamingo/filterdemo/a/g.c Lcom/flamingo/filterdemo/a/a;]
+      [74] aload_1 v1
+      [75] invokevirtual #17
+        + Methodref [com/flamingo/filterdemo/a/a.a (Lcom/flamingo/filterdemo/a/j;)V]
+      [78] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [14] Var: [a:com/flamingo/filterdemo/a/g][a:com/flamingo/filterdemo/a/j][i][T][a:java/util/Iterator], Stack: 
+        - [45] Var: ..., Stack: (empty)
+        - [55] Var: [a:com/flamingo/filterdemo/a/g][a:com/flamingo/filterdemo/a/j][i], Stack: 
+        - [78] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/flamingo/filterdemo/a/i;)V
+    Access flags: 0x1
+      = public void a(com.flamingo.filterdemo.a.i)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #15
+        + Fieldref [com/flamingo/filterdemo/a/g.b Ljava/util/ArrayList;]
+      [4] aload_1 v1
+      [5] invokevirtual #24
+        + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
+      [8] pop
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/b;)V
+    Access flags: 0x1
+      = public void a(com.flamingo.filterdemo.a.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 36, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [4] ifnull +11 (target=15)
+      [7] aload_0 v0
+      [8] getfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [11] aconst_null
+      [12] invokevirtual #19
+        + Methodref [com/flamingo/filterdemo/a/b.a (Lcom/flamingo/filterdemo/a/c;)V]
+      [15] aload_0 v0
+      [16] aload_1 v1
+      [17] putfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [20] aload_0 v0
+      [21] getfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [24] ifnull +11 (target=35)
+      [27] aload_0 v0
+      [28] getfield #14
+        + Fieldref [com/flamingo/filterdemo/a/g.a Lcom/flamingo/filterdemo/a/b;]
+      [31] aload_0 v0
+      [32] invokevirtual #19
+        + Methodref [com/flamingo/filterdemo/a/b.a (Lcom/flamingo/filterdemo/a/c;)V]
+      [35] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [15] Var: ..., Stack: (empty)
+        - [35] Var: ..., Stack: (empty)
+  + Method:       a(Lcom/flamingo/filterdemo/a/a;)V
+    Access flags: 0x1
+      = public void a(com.flamingo.filterdemo.a.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #16
+        + Fieldref [com/flamingo/filterdemo/a/g.c Lcom/flamingo/filterdemo/a/a;]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/h
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x601
+    = public interface com.flamingo.filterdemo.a.h extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 7):
+  + Class [com/flamingo/filterdemo/a/h]
+  + Class [java/lang/Object]
+  + Utf8 [()V]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/h]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  + Method:       a()V
+    Access flags: 0x401
+      = public abstract void a()
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/i
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x601
+    = public interface com.flamingo.filterdemo.a.i extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 7):
+  + Class [com/flamingo/filterdemo/a/i]
+  + Class [java/lang/Object]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)I]
+  + Utf8 [a]
+  + Utf8 [com/flamingo/filterdemo/a/i]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)I
+    Access flags: 0x401
+      = public abstract int a(com.flamingo.filterdemo.a.j)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/j
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.flamingo.filterdemo.a.j extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 47):
+  + Class [com/flamingo/filterdemo/a/j]
+  + Class [com/flamingo/filterdemo/a/k]
+  + Class [com/flamingo/filterdemo/a/l]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Fieldref [com/flamingo/filterdemo/a/j.a Lcom/flamingo/filterdemo/a/l;]
+  + Fieldref [com/flamingo/filterdemo/a/j.b Lcom/flamingo/filterdemo/a/k;]
+  + Methodref [com/flamingo/filterdemo/a/j.a (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [com/flamingo/filterdemo/a/k.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/k.b (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [com/flamingo/filterdemo/a/k.get (ILjava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [com/flamingo/filterdemo/a/l.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/l.a (Ljava/lang/String;)I]
+  + Methodref [com/flamingo/filterdemo/a/l.b (Ljava/lang/String;I)I]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/String.hashCode ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/lang/String;)I]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [a Lcom/flamingo/filterdemo/a/l;]
+  + NameAndType [b (Ljava/lang/String;I)I]
+  + NameAndType [b (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [b Lcom/flamingo/filterdemo/a/k;]
+  + NameAndType [get (ILjava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [hashCode ()I]
+  + Utf8 [()I]
+  + Utf8 [()V]
+  + Utf8 [(ILjava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;I)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/a/k;]
+  + Utf8 [Lcom/flamingo/filterdemo/a/l;]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/j]
+  + Utf8 [com/flamingo/filterdemo/a/k]
+  + Utf8 [com/flamingo/filterdemo/a/l]
+  + Utf8 [get]
+  + Utf8 [hashCode]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+
+Fields (count = 2):
+  + Field:        a Lcom/flamingo/filterdemo/a/l;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.l a
+  + Field:        b Lcom/flamingo/filterdemo/a/k;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.k b
+
+Methods (count = 6):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public j()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] new #3
+        + Class [com/flamingo/filterdemo/a/l]
+      [8] dup
+      [9] invokespecial #12
+        + Methodref [com/flamingo/filterdemo/a/l.<init> ()V]
+      [12] putfield #6
+        + Fieldref [com/flamingo/filterdemo/a/j.a Lcom/flamingo/filterdemo/a/l;]
+      [15] aload_0 v0
+      [16] new #2
+        + Class [com/flamingo/filterdemo/a/k]
+      [19] dup
+      [20] invokespecial #9
+        + Methodref [com/flamingo/filterdemo/a/k.<init> ()V]
+      [23] putfield #7
+        + Fieldref [com/flamingo/filterdemo/a/j.b Lcom/flamingo/filterdemo/a/k;]
+      [26] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)I
+    Access flags: 0x1
+      = public int a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 9, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/j.a Lcom/flamingo/filterdemo/a/l;]
+      [4] aload_1 v1
+      [5] invokevirtual #13
+        + Methodref [com/flamingo/filterdemo/a/l.a (Ljava/lang/String;)I]
+      [8] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;I)I
+    Access flags: 0x1
+      = public int a(java.lang.String,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/a/j.a Lcom/flamingo/filterdemo/a/l;]
+      [4] aload_1 v1
+      [5] iload_2 v2
+      [6] invokevirtual #14
+        + Methodref [com/flamingo/filterdemo/a/l.b (Ljava/lang/String;I)I]
+      [9] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String a(java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [com/flamingo/filterdemo/a/j.b Lcom/flamingo/filterdemo/a/k;]
+      [4] aload_1 v1
+      [5] invokevirtual #16
+        + Methodref [java/lang/String.hashCode ()I]
+      [8] aload_2 v2
+      [9] invokevirtual #11
+        + Methodref [com/flamingo/filterdemo/a/k.get (ILjava/lang/Object;)Ljava/lang/Object;]
+      [12] checkcast #5
+        + Class [java/lang/String]
+      [15] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String b(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aconst_null
+      [3] invokevirtual #8
+        + Methodref [com/flamingo/filterdemo/a/j.a (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [6] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String b(java.lang.String,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 13, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [com/flamingo/filterdemo/a/j.b Lcom/flamingo/filterdemo/a/k;]
+      [4] aload_1 v1
+      [5] aload_2 v2
+      [6] invokevirtual #10
+        + Methodref [com/flamingo/filterdemo/a/k.b (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+      [9] checkcast #5
+        + Class [java/lang/String]
+      [12] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/k
+  Superclass:    android/util/SparseArray
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.a.k extends android.util.SparseArray
+
+Interfaces (count = 0):
+
+Constant Pool (count = 32):
+  + Class [android/util/SparseArray]
+  + Class [com/flamingo/filterdemo/a/k]
+  + Class [java/lang/String]
+  + Methodref [android/util/SparseArray.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/k.a (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/flamingo/filterdemo/a/k.a (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [com/flamingo/filterdemo/a/k.get (ILjava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [com/flamingo/filterdemo/a/k.put (ILjava/lang/Object;)V]
+  + Methodref [java/lang/String.hashCode ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [get (ILjava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [hashCode ()I]
+  + NameAndType [put (ILjava/lang/Object;)V]
+  + Utf8 [()I]
+  + Utf8 [()V]
+  + Utf8 [(ILjava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(ILjava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [a]
+  + Utf8 [android/util/SparseArray]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/k]
+  + Utf8 [get]
+  + Utf8 [hashCode]
+  + Utf8 [java/lang/String]
+  + Utf8 [put]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x0
+      = k()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        + Methodref [android/util/SparseArray.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x1
+      = public java.lang.Object a(java.lang.String,java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #9
+        + Methodref [java/lang/String.hashCode ()I]
+      [5] aload_2 v2
+      [6] invokevirtual #7
+        + Methodref [com/flamingo/filterdemo/a/k.get (ILjava/lang/Object;)Ljava/lang/Object;]
+      [9] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)Ljava/lang/Object;
+    Access flags: 0x1
+      = public java.lang.Object a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aconst_null
+      [3] invokevirtual #6
+        + Methodref [com/flamingo/filterdemo/a/k.a (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;]
+      [6] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x1
+      = public java.lang.Object b(java.lang.String,java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 4, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #5
+        + Methodref [com/flamingo/filterdemo/a/k.a (Ljava/lang/String;)Ljava/lang/Object;]
+      [5] astore_3 v3
+      [6] aload_0 v0
+      [7] aload_1 v1
+      [8] invokevirtual #9
+        + Methodref [java/lang/String.hashCode ()I]
+      [11] aload_2 v2
+      [12] invokevirtual #8
+        + Methodref [com/flamingo/filterdemo/a/k.put (ILjava/lang/Object;)V]
+      [15] aload_3 v3
+      [16] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/a/l
+  Superclass:    android/util/SparseIntArray
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.a.l extends android.util.SparseIntArray
+
+Interfaces (count = 0):
+
+Constant Pool (count = 32):
+  + Class [android/util/SparseIntArray]
+  + Class [com/flamingo/filterdemo/a/l]
+  + Class [java/lang/String]
+  + Methodref [android/util/SparseIntArray.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/l.a (Ljava/lang/String;)I]
+  + Methodref [com/flamingo/filterdemo/a/l.a (Ljava/lang/String;I)I]
+  + Methodref [com/flamingo/filterdemo/a/l.get (II)I]
+  + Methodref [com/flamingo/filterdemo/a/l.put (II)V]
+  + Methodref [java/lang/String.hashCode ()I]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/lang/String;)I]
+  + NameAndType [a (Ljava/lang/String;I)I]
+  + NameAndType [get (II)I]
+  + NameAndType [hashCode ()I]
+  + NameAndType [put (II)V]
+  + Utf8 [()I]
+  + Utf8 [()V]
+  + Utf8 [(II)I]
+  + Utf8 [(II)V]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;I)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [a]
+  + Utf8 [android/util/SparseIntArray]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/l]
+  + Utf8 [get]
+  + Utf8 [hashCode]
+  + Utf8 [java/lang/String]
+  + Utf8 [put]
+
+Fields (count = 0):
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x0
+      = l()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        + Methodref [android/util/SparseIntArray.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;I)I
+    Access flags: 0x1
+      = public int a(java.lang.String,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #9
+        + Methodref [java/lang/String.hashCode ()I]
+      [5] iload_2 v2
+      [6] invokevirtual #7
+        + Methodref [com/flamingo/filterdemo/a/l.get (II)I]
+      [9] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)I
+    Access flags: 0x1
+      = public int a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] iconst_m1
+      [3] invokevirtual #6
+        + Methodref [com/flamingo/filterdemo/a/l.a (Ljava/lang/String;I)I]
+      [6] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Ljava/lang/String;I)I
+    Access flags: 0x1
+      = public int b(java.lang.String,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 4, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #5
+        + Methodref [com/flamingo/filterdemo/a/l.a (Ljava/lang/String;)I]
+      [5] istore_3 v3
+      [6] aload_0 v0
+      [7] aload_1 v1
+      [8] invokevirtual #9
+        + Methodref [java/lang/String.hashCode ()I]
+      [11] iload_2 v2
+      [12] invokevirtual #8
+        + Methodref [com/flamingo/filterdemo/a/l.put (II)V]
+      [15] iload_3 v3
+      [16] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/demo/MainActivity
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.flamingo.filterdemo.demo.MainActivity extends android.app.Activity
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 180):
+  + Integer [16908308]
+  + Integer [16908309]
+  + Integer [17367044]
+  + Integer [2130903040]
+  + Integer [2131230721]
+  + Integer [2131230722]
+  + Integer [2131230723]
+  + String []
+  + String [10086]
+  + String [106223]
+  + String [107445]
+  + String [134]
+  + String [156]
+  + String [95555]
+  + String [95588]
+  + String [date]
+  + String [phone]
+  + Class [android/app/Activity]
+  + Class [android/view/View$OnClickListener]
+  + Class [android/widget/Button]
+  + Class [android/widget/ListView]
+  + Class [android/widget/SimpleAdapter]
+  + Class [android/widget/TextView]
+  + Class [com/flamingo/filterdemo/a/d]
+  + Class [com/flamingo/filterdemo/a/h]
+  + Class [com/flamingo/filterdemo/b/a]
+  + Class [com/flamingo/filterdemo/b/b]
+  + Class [com/flamingo/filterdemo/demo/MainActivity]
+  + Class [com/flamingo/filterdemo/demo/a]
+  + Class [com/flamingo/filterdemo/demo/b]
+  + Class [com/flamingo/filterdemo/demo/c]
+  + Class [java/lang/CharSequence]
+  + Class [java/lang/String]
+  + Class [java/util/LinkedList]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.a Landroid/widget/Button;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.b Landroid/widget/TextView;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.c Landroid/widget/ListView;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.d Ljava/util/LinkedList;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.e Lcom/flamingo/filterdemo/a/h;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.f Lcom/flamingo/filterdemo/a/b;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.g Lcom/flamingo/filterdemo/a/a;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.h Landroid/widget/ListAdapter;]
+  + Fieldref [com/flamingo/filterdemo/demo/MainActivity.i Landroid/os/Handler;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onDestroy ()V]
+  + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+  + Methodref [android/widget/SimpleAdapter.<init> (Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V]
+  + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [com/flamingo/filterdemo/a/d.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/d.a ()Lcom/flamingo/filterdemo/a/h;]
+  + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/a;)Lcom/flamingo/filterdemo/a/d;]
+  + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/b;)Lcom/flamingo/filterdemo/a/d;]
+  + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+  + Methodref [com/flamingo/filterdemo/b/a.<init> (I[Ljava/lang/String;)V]
+  + Methodref [com/flamingo/filterdemo/b/b.<init> (I[Ljava/lang/String;)V]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.a ()V]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.setContentView (I)V]
+  + Methodref [com/flamingo/filterdemo/demo/a.<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Methodref [com/flamingo/filterdemo/demo/b.<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Methodref [com/flamingo/filterdemo/demo/c.<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Methodref [com/flamingo/filterdemo/demo/c.a (Ljava/lang/String;)V]
+  + Methodref [java/util/LinkedList.<init> ()V]
+  + InterfaceMethodref [com/flamingo/filterdemo/a/h.a ()V]
+  + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (I[Ljava/lang/String;)V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V]
+  + NameAndType [<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + NameAndType [a ()Lcom/flamingo/filterdemo/a/h;]
+  + NameAndType [a ()V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/a;)Lcom/flamingo/filterdemo/a/d;]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/b;)Lcom/flamingo/filterdemo/a/d;]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+  + NameAndType [a (Ljava/lang/String;)V]
+  + NameAndType [a Landroid/widget/Button;]
+  + NameAndType [b Landroid/widget/TextView;]
+  + NameAndType [c Landroid/widget/ListView;]
+  + NameAndType [d Ljava/util/LinkedList;]
+  + NameAndType [e Lcom/flamingo/filterdemo/a/h;]
+  + NameAndType [f Lcom/flamingo/filterdemo/a/b;]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [g Lcom/flamingo/filterdemo/a/a;]
+  + NameAndType [getText ()Ljava/lang/CharSequence;]
+  + NameAndType [h Landroid/widget/ListAdapter;]
+  + NameAndType [i Landroid/os/Handler;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onDestroy ()V]
+  + NameAndType [setAdapter (Landroid/widget/ListAdapter;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 []
+  + Utf8 [()Lcom/flamingo/filterdemo/a/h;]
+  + Utf8 [()Ljava/lang/CharSequence;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(I[Ljava/lang/String;)V]
+  + Utf8 [(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Landroid/widget/ListAdapter;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/a;)Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/b;)Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListAdapter;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Ljava/util/LinkedList;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [10086]
+  + Utf8 [106223]
+  + Utf8 [107445]
+  + Utf8 [134]
+  + Utf8 [156]
+  + Utf8 [95555]
+  + Utf8 [95588]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [HandlerLeak]
+  + Utf8 [Landroid/annotation/SuppressLint;]
+  + Utf8 [Landroid/os/Handler;]
+  + Utf8 [Landroid/widget/Button;]
+  + Utf8 [Landroid/widget/ListAdapter;]
+  + Utf8 [Landroid/widget/ListView;]
+  + Utf8 [Landroid/widget/TextView;]
+  + Utf8 [Lcom/flamingo/filterdemo/a/a;]
+  + Utf8 [Lcom/flamingo/filterdemo/a/b;]
+  + Utf8 [Lcom/flamingo/filterdemo/a/h;]
+  + Utf8 [Ljava/util/LinkedList;]
+  + Utf8 [RuntimeInvisibleAnnotations]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [android/widget/Button]
+  + Utf8 [android/widget/ListView]
+  + Utf8 [android/widget/SimpleAdapter]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/flamingo/filterdemo/a/d]
+  + Utf8 [com/flamingo/filterdemo/a/h]
+  + Utf8 [com/flamingo/filterdemo/b/a]
+  + Utf8 [com/flamingo/filterdemo/b/b]
+  + Utf8 [com/flamingo/filterdemo/demo/MainActivity]
+  + Utf8 [com/flamingo/filterdemo/demo/a]
+  + Utf8 [com/flamingo/filterdemo/demo/b]
+  + Utf8 [com/flamingo/filterdemo/demo/c]
+  + Utf8 [d]
+  + Utf8 [date]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [findViewById]
+  + Utf8 [g]
+  + Utf8 [getText]
+  + Utf8 [h]
+  + Utf8 [i]
+  + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/util/LinkedList]
+  + Utf8 [onClick]
+  + Utf8 [onCreate]
+  + Utf8 [onDestroy]
+  + Utf8 [phone]
+  + Utf8 [setAdapter]
+  + Utf8 [setContentView]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setText]
+  + Utf8 [toString]
+  + Utf8 [value]
+
+Fields (count = 9):
+  + Field:        a Landroid/widget/Button;
+    Access flags: 0x2
+      = private android.widget.Button a
+  + Field:        b Landroid/widget/TextView;
+    Access flags: 0x2
+      = private android.widget.TextView b
+  + Field:        c Landroid/widget/ListView;
+    Access flags: 0x2
+      = private android.widget.ListView c
+  + Field:        d Ljava/util/LinkedList;
+    Access flags: 0x2
+      = private java.util.LinkedList d
+  + Field:        e Lcom/flamingo/filterdemo/a/h;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.h e
+  + Field:        f Lcom/flamingo/filterdemo/a/b;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.b f
+  + Field:        g Lcom/flamingo/filterdemo/a/a;
+    Access flags: 0x2
+      = private com.flamingo.filterdemo.a.a g
+  + Field:        h Landroid/widget/ListAdapter;
+    Access flags: 0x2
+      = private android.widget.ListAdapter h
+  + Field:        i Landroid/os/Handler;
+    Access flags: 0x2
+      = private android.os.Handler i
+
+Methods (count = 9):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public MainActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 40, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #44
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] new #34
+        + Class [java/util/LinkedList]
+      [8] dup
+      [9] invokespecial #66
+        + Methodref [java/util/LinkedList.<init> ()V]
+      [12] putfield #38
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.d Ljava/util/LinkedList;]
+      [15] aload_0 v0
+      [16] new #31
+        + Class [com/flamingo/filterdemo/demo/c]
+      [19] dup
+      [20] aload_0 v0
+      [21] invokespecial #64
+        + Methodref [com/flamingo/filterdemo/demo/c.<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+      [24] putfield #40
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.f Lcom/flamingo/filterdemo/a/b;]
+      [27] aload_0 v0
+      [28] new #30
+        + Class [com/flamingo/filterdemo/demo/b]
+      [31] dup
+      [32] aload_0 v0
+      [33] invokespecial #63
+        + Methodref [com/flamingo/filterdemo/demo/b.<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+      [36] putfield #41
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.g Lcom/flamingo/filterdemo/a/a;]
+      [39] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 2):
+    + Code attribute instructions (code length = 131, locals = 2, stack = 11):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #45
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #4
+        + Integer [2130903040]
+      [8] invokevirtual #61
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.setContentView (I)V]
+      [11] aload_0 v0
+      [12] aload_0 v0
+      [13] ldc #6
+        + Integer [2131230722]
+      [15] invokevirtual #60
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.findViewById (I)Landroid/view/View;]
+      [18] checkcast #20
+        + Class [android/widget/Button]
+      [21] putfield #35
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.a Landroid/widget/Button;]
+      [24] aload_0 v0
+      [25] aload_0 v0
+      [26] ldc #5
+        + Integer [2131230721]
+      [28] invokevirtual #60
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.findViewById (I)Landroid/view/View;]
+      [31] checkcast #23
+        + Class [android/widget/TextView]
+      [34] putfield #36
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.b Landroid/widget/TextView;]
+      [37] aload_0 v0
+      [38] aload_0 v0
+      [39] ldc #7
+        + Integer [2131230723]
+      [41] invokevirtual #60
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.findViewById (I)Landroid/view/View;]
+      [44] checkcast #21
+        + Class [android/widget/ListView]
+      [47] putfield #37
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.c Landroid/widget/ListView;]
+      [50] aload_0 v0
+      [51] getfield #35
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.a Landroid/widget/Button;]
+      [54] aload_0 v0
+      [55] invokevirtual #47
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [58] aload_0 v0
+      [59] new #22
+        + Class [android/widget/SimpleAdapter]
+      [62] dup
+      [63] aload_0 v0
+      [64] aload_0 v0
+      [65] getfield #38
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.d Ljava/util/LinkedList;]
+      [68] ldc #3
+        + Integer [17367044]
+      [70] iconst_2
+      [71] anewarray #33
+        + Class [java/lang/String]
+      [74] dup
+      [75] iconst_0
+      [76] ldc #17
+        + String [phone]
+      [78] aastore
+      [79] dup
+      [80] iconst_1
+      [81] ldc #16
+        + String [date]
+      [83] aastore
+      [84] iconst_2
+      [85] newarray 10
+      [87] dup
+      [88] iconst_0
+      [89] ldc #1
+        + Integer [16908308]
+      [91] iastore
+      [92] dup
+      [93] iconst_1
+      [94] ldc #2
+        + Integer [16908309]
+      [96] iastore
+      [97] invokespecial #49
+        + Methodref [android/widget/SimpleAdapter.<init> (Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V]
+      [100] putfield #42
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.h Landroid/widget/ListAdapter;]
+      [103] aload_0 v0
+      [104] getfield #37
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.c Landroid/widget/ListView;]
+      [107] aload_0 v0
+      [108] getfield #42
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.h Landroid/widget/ListAdapter;]
+      [111] invokevirtual #48
+        + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+      [114] aload_0 v0
+      [115] invokespecial #59
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.a ()V]
+      [118] aload_0 v0
+      [119] new #29
+        + Class [com/flamingo/filterdemo/demo/a]
+      [122] dup
+      [123] aload_0 v0
+      [124] invokespecial #62
+        + Methodref [com/flamingo/filterdemo/demo/a.<init> (Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+      [127] putfield #43
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.i Landroid/os/Handler;]
+      [130] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+    + Runtime invisible annotations attribute:
+      - Annotation [Landroid/annotation/SuppressLint;]:
+        - Array element value [value]:
+          + Constant element value [(default) '115']
+            + Utf8 [HandlerLeak]
+  + Method:       onDestroy()V
+    Access flags: 0x4
+      = protected void onDestroy()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #46
+        + Methodref [android/app/Activity.onDestroy ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 120, locals = 2, stack = 9):
+      [0] new #24
+        + Class [com/flamingo/filterdemo/a/d]
+      [3] dup
+      [4] invokespecial #52
+        + Methodref [com/flamingo/filterdemo/a/d.<init> ()V]
+      [7] astore_1 v1
+      [8] aload_0 v0
+      [9] aload_1 v1
+      [10] aload_0 v0
+      [11] getfield #40
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.f Lcom/flamingo/filterdemo/a/b;]
+      [14] invokevirtual #55
+        + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/b;)Lcom/flamingo/filterdemo/a/d;]
+      [17] aload_0 v0
+      [18] getfield #41
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.g Lcom/flamingo/filterdemo/a/a;]
+      [21] invokevirtual #54
+        + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/a;)Lcom/flamingo/filterdemo/a/d;]
+      [24] new #26
+        + Class [com/flamingo/filterdemo/b/a]
+      [27] dup
+      [28] iconst_2
+      [29] iconst_2
+      [30] anewarray #33
+        + Class [java/lang/String]
+      [33] dup
+      [34] iconst_0
+      [35] ldc #14
+        + String [95555]
+      [37] aastore
+      [38] dup
+      [39] iconst_1
+      [40] ldc #15
+        + String [95588]
+      [42] aastore
+      [43] invokespecial #57
+        + Methodref [com/flamingo/filterdemo/b/a.<init> (I[Ljava/lang/String;)V]
+      [46] invokevirtual #56
+        + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+      [49] new #26
+        + Class [com/flamingo/filterdemo/b/a]
+      [52] dup
+      [53] iconst_0
+      [54] iconst_2
+      [55] anewarray #33
+        + Class [java/lang/String]
+      [58] dup
+      [59] iconst_0
+      [60] ldc #10
+        + String [106223]
+      [62] aastore
+      [63] dup
+      [64] iconst_1
+      [65] ldc #11
+        + String [107445]
+      [67] aastore
+      [68] invokespecial #57
+        + Methodref [com/flamingo/filterdemo/b/a.<init> (I[Ljava/lang/String;)V]
+      [71] invokevirtual #56
+        + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+      [74] new #27
+        + Class [com/flamingo/filterdemo/b/b]
+      [77] dup
+      [78] iconst_0
+      [79] iconst_3
+      [80] anewarray #33
+        + Class [java/lang/String]
+      [83] dup
+      [84] iconst_0
+      [85] ldc #13
+        + String [156]
+      [87] aastore
+      [88] dup
+      [89] iconst_1
+      [90] ldc #9
+        + String [10086]
+      [92] aastore
+      [93] dup
+      [94] iconst_2
+      [95] ldc #12
+        + String [134]
+      [97] aastore
+      [98] invokespecial #58
+        + Methodref [com/flamingo/filterdemo/b/b.<init> (I[Ljava/lang/String;)V]
+      [101] invokevirtual #56
+        + Methodref [com/flamingo/filterdemo/a/d.a (Lcom/flamingo/filterdemo/a/i;)Lcom/flamingo/filterdemo/a/d;]
+      [104] invokevirtual #53
+        + Methodref [com/flamingo/filterdemo/a/d.a ()Lcom/flamingo/filterdemo/a/h;]
+      [107] putfield #39
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.e Lcom/flamingo/filterdemo/a/h;]
+      [110] aload_0 v0
+      [111] getfield #39
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.e Lcom/flamingo/filterdemo/a/h;]
+      [114] invokeinterface #67
+        + InterfaceMethodref [com/flamingo/filterdemo/a/h.a ()V]
+      [119] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 34, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #36
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.b Landroid/widget/TextView;]
+      [4] invokevirtual #50
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [7] invokeinterface #68
+        + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+      [12] astore_2 v2
+      [13] aload_0 v0
+      [14] getfield #36
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.b Landroid/widget/TextView;]
+      [17] ldc #8
+        + String []
+      [19] invokevirtual #51
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [22] aload_0 v0
+      [23] getfield #40
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.f Lcom/flamingo/filterdemo/a/b;]
+      [26] checkcast #31
+        + Class [com/flamingo/filterdemo/demo/c]
+      [29] aload_2 v2
+      [30] invokevirtual #65
+        + Methodref [com/flamingo/filterdemo/demo/c.a (Ljava/lang/String;)V]
+      [33] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/os/Handler;
+    Access flags: 0x1008
+      = static synthetic android.os.Handler a(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #43
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.i Landroid/os/Handler;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(Lcom/flamingo/filterdemo/demo/MainActivity;)Ljava/util/LinkedList;
+    Access flags: 0x1008
+      = static synthetic java.util.LinkedList b(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #38
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.d Ljava/util/LinkedList;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;
+    Access flags: 0x1008
+      = static synthetic android.widget.ListView c(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #37
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.c Landroid/widget/ListView;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       d(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListAdapter;
+    Access flags: 0x1008
+      = static synthetic android.widget.ListAdapter d(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #42
+        + Fieldref [com/flamingo/filterdemo/demo/MainActivity.h Landroid/widget/ListAdapter;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/demo/a
+  Superclass:    android/os/Handler
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.demo.a extends android.os.Handler
+
+Interfaces (count = 0):
+
+Constant Pool (count = 104):
+  + Integer [17301659]
+  + String [date]
+  + String [notification]
+  + String [phone]
+  + Class [android/app/Notification$Builder]
+  + Class [android/app/NotificationManager]
+  + Class [android/content/Context]
+  + Class [android/os/Bundle]
+  + Class [android/os/Handler]
+  + Class [android/os/Message]
+  + Class [android/widget/ListView]
+  + Class [com/flamingo/filterdemo/demo/MainActivity]
+  + Class [com/flamingo/filterdemo/demo/a]
+  + Class [java/util/HashMap]
+  + Class [java/util/LinkedList]
+  + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + Methodref [android/app/Notification$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/Notification$Builder.build ()Landroid/app/Notification;]
+  + Methodref [android/app/Notification$Builder.setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/Notification$Builder.setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/Notification$Builder.setSmallIcon (I)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/NotificationManager.notify (ILandroid/app/Notification;)V]
+  + Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [android/os/Bundle.getString (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [android/os/Handler.<init> ()V]
+  + Methodref [android/os/Message.getData ()Landroid/os/Bundle;]
+  + Methodref [android/widget/ListView.invalidate ()V]
+  + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.b (Lcom/flamingo/filterdemo/demo/MainActivity;)Ljava/util/LinkedList;]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.c (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.d (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListAdapter;]
+  + Methodref [java/util/HashMap.<init> ()V]
+  + Methodref [java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [java/util/LinkedList.addFirst (Ljava/lang/Object;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [a Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + NameAndType [addFirst (Ljava/lang/Object;)V]
+  + NameAndType [b (Lcom/flamingo/filterdemo/demo/MainActivity;)Ljava/util/LinkedList;]
+  + NameAndType [build ()Landroid/app/Notification;]
+  + NameAndType [c (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;]
+  + NameAndType [d (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListAdapter;]
+  + NameAndType [getData ()Landroid/os/Bundle;]
+  + NameAndType [getString (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [invalidate ()V]
+  + NameAndType [notify (ILandroid/app/Notification;)V]
+  + NameAndType [put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + NameAndType [setAdapter (Landroid/widget/ListAdapter;)V]
+  + NameAndType [setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + NameAndType [setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + NameAndType [setSmallIcon (I)Landroid/app/Notification$Builder;]
+  + Utf8 [()Landroid/app/Notification;]
+  + Utf8 [()Landroid/os/Bundle;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/app/Notification$Builder;]
+  + Utf8 [(ILandroid/app/Notification;)V]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/os/Message;)V]
+  + Utf8 [(Landroid/widget/ListAdapter;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListAdapter;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Ljava/util/LinkedList;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + Utf8 [(Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + Utf8 [a]
+  + Utf8 [addFirst]
+  + Utf8 [android/app/Notification$Builder]
+  + Utf8 [android/app/NotificationManager]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/os/Bundle]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/os/Message]
+  + Utf8 [android/widget/ListView]
+  + Utf8 [b]
+  + Utf8 [build]
+  + Utf8 [c]
+  + Utf8 [com/flamingo/filterdemo/demo/MainActivity]
+  + Utf8 [com/flamingo/filterdemo/demo/a]
+  + Utf8 [d]
+  + Utf8 [date]
+  + Utf8 [getData]
+  + Utf8 [getString]
+  + Utf8 [getSystemService]
+  + Utf8 [handleMessage]
+  + Utf8 [invalidate]
+  + Utf8 [java/util/HashMap]
+  + Utf8 [java/util/LinkedList]
+  + Utf8 [notification]
+  + Utf8 [notify]
+  + Utf8 [phone]
+  + Utf8 [put]
+  + Utf8 [setAdapter]
+  + Utf8 [setContentText]
+  + Utf8 [setContentTitle]
+  + Utf8 [setSmallIcon]
+
+Fields (count = 1):
+  + Field:        a Lcom/flamingo/filterdemo/demo/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.flamingo.filterdemo.demo.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/flamingo/filterdemo/demo/MainActivity;)V
+    Access flags: 0x0
+      = a(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #16
+        + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #25
+        + Methodref [android/os/Handler.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       handleMessage(Landroid/os/Message;)V
+    Access flags: 0x1
+      = public void handleMessage(android.os.Message)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 145, locals = 9, stack = 3):
+      [0] aload_1 v1
+      [1] invokevirtual #26
+        + Methodref [android/os/Message.getData ()Landroid/os/Bundle;]
+      [4] ldc #4
+        + String [phone]
+      [6] invokevirtual #24
+        + Methodref [android/os/Bundle.getString (Ljava/lang/String;)Ljava/lang/String;]
+      [9] astore_2 v2
+      [10] aload_1 v1
+      [11] invokevirtual #26
+        + Methodref [android/os/Message.getData ()Landroid/os/Bundle;]
+      [14] ldc #2
+        + String [date]
+      [16] invokevirtual #24
+        + Methodref [android/os/Bundle.getString (Ljava/lang/String;)Ljava/lang/String;]
+      [19] astore_3 v3
+      [20] new #14
+        + Class [java/util/HashMap]
+      [23] dup
+      [24] invokespecial #32
+        + Methodref [java/util/HashMap.<init> ()V]
+      [27] astore v4
+      [29] aload v4
+      [31] ldc #4
+        + String [phone]
+      [33] aload_2 v2
+      [34] invokevirtual #33
+        + Methodref [java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [37] pop
+      [38] aload v4
+      [40] ldc #2
+        + String [date]
+      [42] aload_3 v3
+      [43] invokevirtual #33
+        + Methodref [java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [46] pop
+      [47] aload_0 v0
+      [48] getfield #16
+        + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [51] invokestatic #29
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.b (Lcom/flamingo/filterdemo/demo/MainActivity;)Ljava/util/LinkedList;]
+      [54] aload v4
+      [56] invokevirtual #34
+        + Methodref [java/util/LinkedList.addFirst (Ljava/lang/Object;)V]
+      [59] aload_0 v0
+      [60] getfield #16
+        + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [63] invokestatic #30
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.c (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;]
+      [66] aload_0 v0
+      [67] getfield #16
+        + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [70] invokestatic #31
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.d (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListAdapter;]
+      [73] invokevirtual #28
+        + Methodref [android/widget/ListView.setAdapter (Landroid/widget/ListAdapter;)V]
+      [76] aload_0 v0
+      [77] getfield #16
+        + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [80] invokestatic #30
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.c (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/widget/ListView;]
+      [83] invokevirtual #27
+        + Methodref [android/widget/ListView.invalidate ()V]
+      [86] aload_0 v0
+      [87] getfield #16
+        + Fieldref [com/flamingo/filterdemo/demo/a.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [90] astore v5
+      [92] aload v5
+      [94] ldc #3
+        + String [notification]
+      [96] invokevirtual #23
+        + Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [99] checkcast #6
+        + Class [android/app/NotificationManager]
+      [102] astore v6
+      [104] new #5
+        + Class [android/app/Notification$Builder]
+      [107] dup
+      [108] aload v5
+      [110] invokespecial #17
+        + Methodref [android/app/Notification$Builder.<init> (Landroid/content/Context;)V]
+      [113] astore v7
+      [115] aload v7
+      [117] aload_2 v2
+      [118] invokevirtual #20
+        + Methodref [android/app/Notification$Builder.setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+      [121] aload_3 v3
+      [122] invokevirtual #19
+        + Methodref [android/app/Notification$Builder.setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+      [125] ldc #1
+        + Integer [17301659]
+      [127] invokevirtual #21
+        + Methodref [android/app/Notification$Builder.setSmallIcon (I)Landroid/app/Notification$Builder;]
+      [130] invokevirtual #18
+        + Methodref [android/app/Notification$Builder.build ()Landroid/app/Notification;]
+      [133] astore v8
+      [135] aload v6
+      [137] bipush 22
+      [139] aload v8
+      [141] invokevirtual #22
+        + Methodref [android/app/NotificationManager.notify (ILandroid/app/Notification;)V]
+      [144] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/demo/b
+  Superclass:    com/flamingo/filterdemo/a/a
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.demo.b extends com.flamingo.filterdemo.a.a
+
+Interfaces (count = 0):
+
+Constant Pool (count = 102):
+  + String [(%s)%s]
+  + String [date]
+  + String [key_data]
+  + String [key_op]
+  + String [phone]
+  + String [yyyy-MM-dd hh:mm:ss]
+  + String [拦截]
+  + String [放行]
+  + String [跳过]
+  + Class [[Ljava/lang/Object;]
+  + Class [android/os/Bundle]
+  + Class [android/os/Handler]
+  + Class [android/os/Message]
+  + Class [com/flamingo/filterdemo/a/a]
+  + Class [com/flamingo/filterdemo/a/j]
+  + Class [com/flamingo/filterdemo/demo/MainActivity]
+  + Class [com/flamingo/filterdemo/demo/b]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/text/SimpleDateFormat]
+  + Class [java/util/Date]
+  + Class [java/util/Locale]
+  + Fieldref [android/os/Message.what I]
+  + Fieldref [com/flamingo/filterdemo/demo/b.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + Fieldref [java/util/Locale.CHINA Ljava/util/Locale;]
+  + Methodref [android/os/Bundle.<init> ()V]
+  + Methodref [android/os/Bundle.putString (Ljava/lang/String;Ljava/lang/String;)V]
+  + Methodref [android/os/Handler.obtainMessage ()Landroid/os/Message;]
+  + Methodref [android/os/Message.sendToTarget ()V]
+  + Methodref [android/os/Message.setData (Landroid/os/Bundle;)V]
+  + Methodref [com/flamingo/filterdemo/a/a.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/j.a (Ljava/lang/String;)I]
+  + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [com/flamingo/filterdemo/demo/MainActivity.a (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/os/Handler;]
+  + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V]
+  + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
+  + Methodref [java/util/Date.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;Ljava/util/Locale;)V]
+  + NameAndType [CHINA Ljava/util/Locale;]
+  + NameAndType [a (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/os/Handler;]
+  + NameAndType [a (Ljava/lang/String;)I]
+  + NameAndType [a Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + NameAndType [b (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [format (Ljava/util/Date;)Ljava/lang/String;]
+  + NameAndType [obtainMessage ()Landroid/os/Message;]
+  + NameAndType [putString (Ljava/lang/String;Ljava/lang/String;)V]
+  + NameAndType [sendToTarget ()V]
+  + NameAndType [setData (Landroid/os/Bundle;)V]
+  + NameAndType [what I]
+  + Utf8 [(%s)%s]
+  + Utf8 [()Landroid/os/Message;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/os/Handler;]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/util/Locale;)V]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Ljava/util/Date;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [CHINA]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + Utf8 [Ljava/util/Locale;]
+  + Utf8 [StackMapTable]
+  + Utf8 [[Ljava/lang/Object;]
+  + Utf8 [a]
+  + Utf8 [android/os/Bundle]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/os/Message]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/a]
+  + Utf8 [com/flamingo/filterdemo/a/j]
+  + Utf8 [com/flamingo/filterdemo/demo/MainActivity]
+  + Utf8 [com/flamingo/filterdemo/demo/b]
+  + Utf8 [date]
+  + Utf8 [format]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/text/SimpleDateFormat]
+  + Utf8 [java/util/Date]
+  + Utf8 [java/util/Locale]
+  + Utf8 [key_data]
+  + Utf8 [key_op]
+  + Utf8 [obtainMessage]
+  + Utf8 [phone]
+  + Utf8 [putString]
+  + Utf8 [sendToTarget]
+  + Utf8 [setData]
+  + Utf8 [what]
+  + Utf8 [yyyy-MM-dd hh:mm:ss]
+  + Utf8 [拦截]
+  + Utf8 [放行]
+  + Utf8 [跳过]
+
+Fields (count = 1):
+  + Field:        a Lcom/flamingo/filterdemo/demo/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.flamingo.filterdemo.demo.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/flamingo/filterdemo/demo/MainActivity;)V
+    Access flags: 0x0
+      = b(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #24
+        + Fieldref [com/flamingo/filterdemo/demo/b.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #31
+        + Methodref [com/flamingo/filterdemo/a/a.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)V
+    Access flags: 0x1
+      = public void a(com.flamingo.filterdemo.a.j)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 136, locals = 8, stack = 6):
+      [0] aload_1 v1
+      [1] ldc #4
+        + String [key_op]
+      [3] invokevirtual #32
+        + Methodref [com/flamingo/filterdemo/a/j.a (Ljava/lang/String;)I]
+      [6] istore_2 v2
+      [7] aload_1 v1
+      [8] ldc #3
+        + String [key_data]
+      [10] invokevirtual #33
+        + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;)Ljava/lang/String;]
+      [13] astore_3 v3
+      [14] ldc #1
+        + String [(%s)%s]
+      [16] iconst_2
+      [17] anewarray #18
+        + Class [java/lang/Object]
+      [20] dup
+      [21] iconst_0
+      [22] iload_2 v2
+      [23] ifne +8 (target=31)
+      [26] ldc #7
+        + String [拦截]
+      [28] goto +15 (target=43)
+      [31] iload_2 v2
+      [32] iconst_2
+      [33] ificmpne +8 (target=41)
+      [36] ldc #8
+        + String [放行]
+      [38] goto +5 (target=43)
+      [41] ldc #9
+        + String [跳过]
+      [43] aastore
+      [44] dup
+      [45] iconst_1
+      [46] aload_3 v3
+      [47] aastore
+      [48] invokestatic #35
+        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+      [51] astore v4
+      [53] new #20
+        + Class [java/text/SimpleDateFormat]
+      [56] dup
+      [57] ldc #6
+        + String [yyyy-MM-dd hh:mm:ss]
+      [59] getstatic #25
+        + Fieldref [java/util/Locale.CHINA Ljava/util/Locale;]
+      [62] invokespecial #36
+        + Methodref [java/text/SimpleDateFormat.<init> (Ljava/lang/String;Ljava/util/Locale;)V]
+      [65] new #21
+        + Class [java/util/Date]
+      [68] dup
+      [69] invokespecial #38
+        + Methodref [java/util/Date.<init> ()V]
+      [72] invokevirtual #37
+        + Methodref [java/text/SimpleDateFormat.format (Ljava/util/Date;)Ljava/lang/String;]
+      [75] astore v5
+      [77] new #11
+        + Class [android/os/Bundle]
+      [80] dup
+      [81] invokespecial #26
+        + Methodref [android/os/Bundle.<init> ()V]
+      [84] astore v6
+      [86] aload v6
+      [88] ldc #5
+        + String [phone]
+      [90] aload v4
+      [92] invokevirtual #27
+        + Methodref [android/os/Bundle.putString (Ljava/lang/String;Ljava/lang/String;)V]
+      [95] aload v6
+      [97] ldc #2
+        + String [date]
+      [99] aload v5
+      [101] invokevirtual #27
+        + Methodref [android/os/Bundle.putString (Ljava/lang/String;Ljava/lang/String;)V]
+      [104] aload_0 v0
+      [105] getfield #24
+        + Fieldref [com/flamingo/filterdemo/demo/b.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [108] invokestatic #34
+        + Methodref [com/flamingo/filterdemo/demo/MainActivity.a (Lcom/flamingo/filterdemo/demo/MainActivity;)Landroid/os/Handler;]
+      [111] invokevirtual #28
+        + Methodref [android/os/Handler.obtainMessage ()Landroid/os/Message;]
+      [114] astore v7
+      [116] aload v7
+      [118] bipush 11
+      [120] putfield #23
+        + Fieldref [android/os/Message.what I]
+      [123] aload v7
+      [125] aload v6
+      [127] invokevirtual #30
+        + Methodref [android/os/Message.setData (Landroid/os/Bundle;)V]
+      [130] aload v7
+      [132] invokevirtual #29
+        + Methodref [android/os/Message.sendToTarget ()V]
+      [135] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [31] Var: [a:com/flamingo/filterdemo/demo/b][a:com/flamingo/filterdemo/a/j][i][a:java/lang/String], Stack: [a:java/lang/String][a:[Ljava/lang/Object;][a:[Ljava/lang/Object;][i]
+        - [41] Var: [a:com/flamingo/filterdemo/demo/b][a:com/flamingo/filterdemo/a/j][i][a:java/lang/String], Stack: [a:java/lang/String][a:[Ljava/lang/Object;][a:[Ljava/lang/Object;][i]
+        - [43] Var: [a:com/flamingo/filterdemo/demo/b][a:com/flamingo/filterdemo/a/j][i][a:java/lang/String], Stack: [a:java/lang/String][a:[Ljava/lang/Object;][a:[Ljava/lang/Object;][i][a:java/lang/String]
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/demo/c
+  Superclass:    com/flamingo/filterdemo/a/b
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.flamingo.filterdemo.demo.c extends com.flamingo.filterdemo.a.b
+
+Interfaces (count = 0):
+
+Constant Pool (count = 32):
+  + String [key_data]
+  + Class [com/flamingo/filterdemo/a/b]
+  + Class [com/flamingo/filterdemo/a/j]
+  + Class [com/flamingo/filterdemo/demo/c]
+  + Fieldref [com/flamingo/filterdemo/demo/c.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + Fieldref [com/flamingo/filterdemo/demo/c.b Z]
+  + Methodref [com/flamingo/filterdemo/a/b.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/j.<init> ()V]
+  + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [com/flamingo/filterdemo/demo/c.a (Lcom/flamingo/filterdemo/a/j;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lcom/flamingo/filterdemo/a/j;)V]
+  + NameAndType [a Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + NameAndType [b (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [b Z]
+  + Utf8 [()V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/demo/MainActivity;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/flamingo/filterdemo/demo/MainActivity;]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/b]
+  + Utf8 [com/flamingo/filterdemo/a/j]
+  + Utf8 [com/flamingo/filterdemo/demo/c]
+  + Utf8 [key_data]
+
+Fields (count = 2):
+  + Field:        b Z
+    Access flags: 0x2
+      = private boolean b
+  + Field:        a Lcom/flamingo/filterdemo/demo/MainActivity;
+    Access flags: 0x1010
+      = final synthetic com.flamingo.filterdemo.demo.MainActivity a
+
+Methods (count = 3):
+  - Method:       <init>(Lcom/flamingo/filterdemo/demo/MainActivity;)V
+    Access flags: 0x0
+      = c(com.flamingo.filterdemo.demo.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #5
+        + Fieldref [com/flamingo/filterdemo/demo/c.a Lcom/flamingo/filterdemo/demo/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [com/flamingo/filterdemo/a/b.<init> ()V]
+      [9] aload_0 v0
+      [10] iconst_0
+      [11] putfield #6
+        + Fieldref [com/flamingo/filterdemo/demo/c.b Z]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x4
+      = protected void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] iconst_1
+      [2] putfield #6
+        + Fieldref [com/flamingo/filterdemo/demo/c.b Z]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [com/flamingo/filterdemo/demo/c.b Z]
+      [4] ifeq +24 (target=28)
+      [7] new #3
+        + Class [com/flamingo/filterdemo/a/j]
+      [10] dup
+      [11] invokespecial #8
+        + Methodref [com/flamingo/filterdemo/a/j.<init> ()V]
+      [14] astore_2 v2
+      [15] aload_2 v2
+      [16] ldc #1
+        + String [key_data]
+      [18] aload_1 v1
+      [19] invokevirtual #9
+        + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [22] pop
+      [23] aload_0 v0
+      [24] aload_2 v2
+      [25] invokevirtual #10
+        + Methodref [com/flamingo/filterdemo/demo/c.a (Lcom/flamingo/filterdemo/a/j;)V]
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [28] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/b/a
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.flamingo.filterdemo.b.a extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [com/flamingo/filterdemo/a/i]
+
+Constant Pool (count = 37):
+  + String [key_data]
+  + Class [[Ljava/lang/String;]
+  + Class [com/flamingo/filterdemo/a/i]
+  + Class [com/flamingo/filterdemo/a/j]
+  + Class [com/flamingo/filterdemo/b/a]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Fieldref [com/flamingo/filterdemo/b/a.a [Ljava/lang/String;]
+  + Fieldref [com/flamingo/filterdemo/b/a.b I]
+  + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+  + NameAndType [<init> ()V]
+  + NameAndType [a [Ljava/lang/String;]
+  + NameAndType [b (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [b I]
+  + NameAndType [equals (Ljava/lang/Object;)Z]
+  + Utf8 [()V]
+  + Utf8 [(I[Ljava/lang/String;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)I]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [StackMapTable]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/i]
+  + Utf8 [com/flamingo/filterdemo/a/j]
+  + Utf8 [com/flamingo/filterdemo/b/a]
+  + Utf8 [equals]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [key_data]
+
+Fields (count = 2):
+  + Field:        a [Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String[] a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+
+Methods (count = 2):
+  - Method:       <init>(I[Ljava/lang/String;)V
+    Access flags: 0x81
+      = public varargs a(int,java.lang.String[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #11
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] iload_1 v1
+      [6] putfield #9
+        + Fieldref [com/flamingo/filterdemo/b/a.b I]
+      [9] aload_0 v0
+      [10] aload_2 v2
+      [11] putfield #8
+        + Fieldref [com/flamingo/filterdemo/b/a.a [Ljava/lang/String;]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)I
+    Access flags: 0x1
+      = public int a(com.flamingo.filterdemo.a.j)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 58, locals = 7, stack = 2):
+      [0] aload_1 v1
+      [1] ldc #1
+        + String [key_data]
+      [3] invokevirtual #10
+        + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;)Ljava/lang/String;]
+      [6] astore_2 v2
+      [7] aload_0 v0
+      [8] getfield #8
+        + Fieldref [com/flamingo/filterdemo/b/a.a [Ljava/lang/String;]
+      [11] dup
+      [12] astore v6
+      [14] arraylength
+      [15] istore v5
+      [17] iconst_0
+      [18] istore v4
+      [20] goto +29 (target=49)
+      [23] aload v6
+      [25] iload v4
+      [27] aaload
+      [28] astore_3 v3
+      [29] aload_3 v3
+      [30] ifnull +16 (target=46)
+      [33] aload_3 v3
+      [34] aload_2 v2
+      [35] invokevirtual #12
+        + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+      [38] ifeq +8 (target=46)
+      [41] aload_0 v0
+      [42] getfield #9
+        + Fieldref [com/flamingo/filterdemo/b/a.b I]
+      [45] ireturn
+      [46] iinc v4, 1
+      [49] iload v4
+      [51] iload v5
+      [53] ificmplt -30 (target=23)
+      [56] iconst_1
+      [57] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [23] Var: [a:com/flamingo/filterdemo/b/a][a:com/flamingo/filterdemo/a/j][a:java/lang/String][T][i][i][a:[Ljava/lang/String;], Stack: 
+        - [46] Var: ..., Stack: (empty)
+        - [49] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/flamingo/filterdemo/b/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.flamingo.filterdemo.b.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [com/flamingo/filterdemo/a/i]
+
+Constant Pool (count = 37):
+  + String [key_data]
+  + Class [[Ljava/lang/String;]
+  + Class [com/flamingo/filterdemo/a/i]
+  + Class [com/flamingo/filterdemo/a/j]
+  + Class [com/flamingo/filterdemo/b/b]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Fieldref [com/flamingo/filterdemo/b/b.a [Ljava/lang/String;]
+  + Fieldref [com/flamingo/filterdemo/b/b.b I]
+  + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
+  + NameAndType [<init> ()V]
+  + NameAndType [a [Ljava/lang/String;]
+  + NameAndType [b (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [b I]
+  + NameAndType [startsWith (Ljava/lang/String;)Z]
+  + Utf8 [()V]
+  + Utf8 [(I[Ljava/lang/String;)V]
+  + Utf8 [(Lcom/flamingo/filterdemo/a/j;)I]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [StackMapTable]
+  + Utf8 [[Ljava/lang/String;]
+  + Utf8 [a]
+  + Utf8 [b]
+  + Utf8 [com/flamingo/filterdemo/a/i]
+  + Utf8 [com/flamingo/filterdemo/a/j]
+  + Utf8 [com/flamingo/filterdemo/b/b]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [key_data]
+  + Utf8 [startsWith]
+
+Fields (count = 2):
+  + Field:        a [Ljava/lang/String;
+    Access flags: 0x2
+      = private java.lang.String[] a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+
+Methods (count = 2):
+  - Method:       <init>(I[Ljava/lang/String;)V
+    Access flags: 0x81
+      = public varargs b(int,java.lang.String[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #11
+        + Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] iload_1 v1
+      [6] putfield #9
+        + Fieldref [com/flamingo/filterdemo/b/b.b I]
+      [9] aload_0 v0
+      [10] aload_2 v2
+      [11] putfield #8
+        + Fieldref [com/flamingo/filterdemo/b/b.a [Ljava/lang/String;]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lcom/flamingo/filterdemo/a/j;)I
+    Access flags: 0x1
+      = public int a(com.flamingo.filterdemo.a.j)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 7, stack = 2):
+      [0] aload_1 v1
+      [1] ldc #1
+        + String [key_data]
+      [3] invokevirtual #10
+        + Methodref [com/flamingo/filterdemo/a/j.b (Ljava/lang/String;)Ljava/lang/String;]
+      [6] astore_2 v2
+      [7] aload_0 v0
+      [8] getfield #8
+        + Fieldref [com/flamingo/filterdemo/b/b.a [Ljava/lang/String;]
+      [11] dup
+      [12] astore v6
+      [14] arraylength
+      [15] istore v5
+      [17] iconst_0
+      [18] istore v4
+      [20] goto +25 (target=45)
+      [23] aload v6
+      [25] iload v4
+      [27] aaload
+      [28] astore_3 v3
+      [29] aload_2 v2
+      [30] aload_3 v3
+      [31] invokevirtual #12
+        + Methodref [java/lang/String.startsWith (Ljava/lang/String;)Z]
+      [34] ifeq +8 (target=42)
+      [37] aload_0 v0
+      [38] getfield #9
+        + Fieldref [com/flamingo/filterdemo/b/b.b I]
+      [41] ireturn
+      [42] iinc v4, 1
+      [45] iload v4
+      [47] iload v5
+      [49] ificmplt -26 (target=23)
+      [52] iconst_1
+      [53] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [23] Var: [a:com/flamingo/filterdemo/b/b][a:com/flamingo/filterdemo/a/j][a:java/lang/String][T][i][i][a:[Ljava/lang/String;], Stack: 
+        - [42] Var: ..., Stack: (empty)
+        - [45] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
