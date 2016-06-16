@@ -20,6 +20,28 @@ public final class InCallingTrigger extends AbsTrigger {
 		// TODO Auto-generated method stub
 
 	}
+
+
+
+//	private boolean mState = false;
+//
+//	@Override
+//	protected void enable() {
+//		mState = true;
+//	}
+//
+//	@Override
+//	protected void disable() {
+//		mState = false;
+//	}
+//
+//	public void emulateInComingCall(String phone){
+//		if(mState){
+//			MessageData data = new MessageData();
+//			data.setString(MessageData.KEY_DATA, phone);
+//			notify(data);
+//		}
+//	}
 	
 
 }

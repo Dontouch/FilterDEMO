@@ -15,4 +15,27 @@ public final class InCallingHandler extends AbsHandler {
 		// TODO Auto-generated method stub 
 		super.handle(data);
 	}
+
+
+//	public void handle(MessageData data){
+//		int opcode = data.getInt(MessageData.KEY_OP);
+//		String phone = data.getString(MessageData.KEY_DATA);
+//
+//		// 刷新数据列表
+//		String phonestr = String.format("(%s)%s",
+//				(opcode == IFilter.OP_BLOCKED) ? "拦截" :
+//						((opcode == IFilter.OP_PASS) ? "放行" : "跳过"), phone);
+//		String datestr = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss",
+//				Locale.CHINA).format(new Date());
+//
+//		Bundle bundle = new Bundle();
+//		bundle.putString("phone", phonestr);
+//		bundle.putString("date", datestr);
+//
+//		Message msg = mUIHandler.obtainMessage();
+//		msg.what = 11;
+//		msg.setData(bundle);
+//
+//		msg.sendToTarget();
+//	}
 }

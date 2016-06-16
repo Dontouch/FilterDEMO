@@ -94,4 +94,40 @@ public class SharedPreferenceDb {
         SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_ALL, Context.MODE_PRIVATE);
         sp.edit().putBoolean(DbConstants.KEY_ALL, false).commit();
     }
+
+    public boolean getClose() {
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_ClOSE, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_CLOSE, false);
+    }
+
+    public boolean getHei() {
+
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_HEI, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_HEI, false);
+    }
+
+    public boolean getBai() {
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_BAI, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_BAI, false);
+    }
+
+    public boolean getAi() {
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_AI, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_AI, false);
+    }
+
+    public boolean getTime() {
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_TIME, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_TIME, false);
+    }
+
+    public boolean getLocation() {
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_LOCATION, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_LOCATIOIN, false);
+    }
+
+    public boolean getAll() {
+        SharedPreferences sp = context.getSharedPreferences(DbConstants.DB_ALL, Context.MODE_PRIVATE);
+        return sp.getBoolean(DbConstants.KEY_ALL, false);
+    }
 }

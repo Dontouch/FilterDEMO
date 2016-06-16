@@ -92,7 +92,6 @@ public class MainActivity extends Activity implements OnClickListener{
 			msg.sendToTarget();
 		}
 	}
-	
 
 	private Button mBTEmulate;
 	private TextView mTVPhone;
@@ -180,6 +179,8 @@ public class MainActivity extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View v) {
+
+		//模拟来电
 		String input = mTVPhone.getText().toString();
 		mTVPhone.setText("");
 		((DemoTrigger)mTrigger).emulateInComingCall(input);

@@ -8,6 +8,7 @@ import android.util.SparseIntArray;
  * @author boyliang
  */
 public final class MessageData{
+
 	public static final String KEY_OP	 	= "key_op";
 	public static final String KEY_DATA 	= "key_data";
 	
