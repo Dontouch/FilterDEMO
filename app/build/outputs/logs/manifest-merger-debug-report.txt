@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidMa
 		INJECTED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:11:5-25:19
+ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:11:5-28:19
 	android:label
 		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -35,12 +35,12 @@ ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidMa
 		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:13:9-45
 	android:theme
 		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:15:9-40
-activity#com.flamingo.filterdemo.demo.MainActivity
+activity#com.flamingo.filterdemo.activity.WelcomeActivity
 ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:16:9-24:20
 	android:label
 		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:18:13-45
 	android:name
-		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:17:13-69
+		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:17:13-76
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
@@ -51,3 +51,9 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
 		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.flamingo.filterdemo.activity.HomeActivity
+ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:26:9-89
+	android:launchMode
+		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:26:57-87
+	android:name
+		ADDED from /Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/AndroidManifest.xml:26:19-56

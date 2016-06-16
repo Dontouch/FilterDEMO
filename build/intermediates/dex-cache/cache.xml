@@ -5,22 +5,8 @@
         jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="7c366b037dff58e5836ccf51775022a68333a43d">
+        sha1="d76e7e3a4cdc20ba103ecb99f869d3b5aee1bb11">
         <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_fc7d8a61312f1de7b6400f31c37580dfe3e2eae8/classes.dex" />
-    </item>
-    <item
-        jar="/Applications/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_b8ba20a7aabbd679a9a553be36f51001a66f5ad0/classes.dex" />
-    </item>
-    <item
-        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="61b7fbd94d5d87d1e90580e843e7058de05abfa1">
-        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1a425a3e6195538978dcc21098b8a52ac9d5be24/classes.dex" />
     </item>
 
 </items>

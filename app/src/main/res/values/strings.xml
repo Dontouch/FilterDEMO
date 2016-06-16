@@ -7,4 +7,21 @@
 
     <string name="title">来电拦截</string>
 
+    <string name="stime_set">时间设置</string>
+    <string name="stime_day">全天拦截</string>
+    <string name="stime_break">指定拦截时间</string>
+    <string name="stime_starttime">起始时间</string>
+    <string name="stime_stoptime">结束时间</string>
+
+
+    <string name="setting_local">输入地区</string>
+
+    <string name="smsinstall">回复短信设置</string>
+    <string name="smsfrequency">陌生号码多少次数后发送短信</string>
+    <string name="phonefrequency">陌生号码多少次数后接听</string>
+    <string name="timespan">拦截时间段设置</string>
+    <string name="timeinstrall">时间设置</string>
+
+    <string name="most">高级设置</string>
+
 </resources>

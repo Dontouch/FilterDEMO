@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:id="@+id/titleBarView"
-        android:background="@color/skyblue">
+        android:background="@color/dangdangblue">
         
         <ImageView 
             android:layout_width="32.0dp"

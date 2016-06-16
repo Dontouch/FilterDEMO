@@ -19,7 +19,7 @@ public class WelcomeActivity extends BaseActivity{
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                // TODO Auto-generated method stub
+
                 // 跳转至登入界面
                 SkipActivityforClass(WelcomeActivity.this, HomeActivity.class);
                 finish();

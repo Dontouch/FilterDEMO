@@ -8,12 +8,12 @@
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/frame.png"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/welcome_bg.png",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/welcome_bg.png"
-    },
-    {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/bg.jpg",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/bg.jpg"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/welcome_bg.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/welcome_bg.png"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_pressed.png",
@@ -30,10 +30,6 @@
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/edit.png",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/edit.png"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_unpressed.png",
