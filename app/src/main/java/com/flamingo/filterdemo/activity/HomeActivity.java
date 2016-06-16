@@ -1,22 +1,31 @@
 package com.flamingo.filterdemo.activity;
 
+import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
 import com.flamingo.filterdemo.R;
+import com.flamingo.filterdemo.db.MyDbHelper;
 import com.flamingo.filterdemo.db.SharedPreferenceDb;
 import com.flamingo.filterdemo.util.MainUtil;
 import com.flamingo.filterdemo.view.DragLayout;
 import com.flamingo.filterdemo.view.SwitchButton;
 import com.flamingo.filterdemo.view.TitleBar;
 import com.nineoldandroids.view.ViewHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -38,7 +47,12 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
 
 
     private ListView filter_listview;
+    BaseAdapter adapter;
+    List<String> phones = new ArrayList<String>();
+    List<String> dates = new ArrayList<String>();
 
+    //数据库
+    MyDbHelper myDbHelper;
 
 
     @Override
@@ -259,12 +273,79 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
 
     private void loadData(){
 
-        //加载拦截的记录
-        //filter_listview.setAdapter(adpter);
+        phones.clear(); //清容器中的数据
+        dates.clear();
+
+        myDbHelper=new MyDbHelper(HomeActivity.this);
+
+        myDbHelper.open();         // 打开数据库
+        Cursor cursor=myDbHelper.querData("record");
+
+        while(cursor.moveToNext()){
+            phones.add(cursor.getString(0));
+            dates.add(cursor.getString(3)+"   "+cursor.getString(2));
+        }
+        cursor.close();
+        myDbHelper.close();
+
+
+        adapter = new BaseAdapter() {
+
+            int count=0;
+
+            @Override
+            public int getCount() {
+                return phones.size();
+            }
+
+            @Override
+            public Object getItem(int position) {
+                return phones.get(position);
+            }
+
+            @Override
+            public long getItemId(int position) {
+                return position;
+            }
+
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                count = position;
+                LayoutInflater inflate=LayoutInflater.from(HomeActivity.this);
+                View view=inflate.inflate(R.layout.item_record, null);
+
+                TextView phonenumber=(TextView) view.findViewById(R.id.item_record_number);
+                TextView date=(TextView) view.findViewById(R.id.item_record_date);
+                ImageButton del=(ImageButton) view.findViewById(R.id.item_record_del);
+
+                phonenumber.setText(phones.get(position));
+                date.setText(dates.get(position));
+
+                del.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        myDbHelper=new MyDbHelper(HomeActivity.this);
+                        myDbHelper.open();
+                        myDbHelper.deleteData(phones.get(count), "record");
+                        myDbHelper.close();
+
+                        loadData();  //刷新页面
+
+                    }
+                });
+
+                return view;
+            }
+        };
+
+        filter_listview.setAdapter(adapter);
     }
 
     @Override
     public void onClick(View v) {
 
     }
+
+
+
 }
