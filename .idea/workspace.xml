@@ -10,131 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68f99f35-c586-424f-af05-db13a0ef6e65" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/flamingo/filterdemo/test/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-safeguard/androidTest/debug/tag.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/Animator$AnimatorListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/Animator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorInflater.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorListenerAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet$AnimatorSetListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet$Dependency.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet$DependencyListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet$Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/AnimatorSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ArgbEvaluator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/FloatEvaluator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/FloatKeyframeSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/IntEvaluator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/IntKeyframeSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/Keyframe$FloatKeyframe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/Keyframe$IntKeyframe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/Keyframe$ObjectKeyframe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/Keyframe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/KeyframeSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ObjectAnimator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$12.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$13.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$14.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PreHoneycombCompat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PropertyValuesHolder$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PropertyValuesHolder$FloatPropertyValuesHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PropertyValuesHolder$IntPropertyValuesHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/PropertyValuesHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/TimeAnimator$TimeListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/TimeAnimator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/TypeEvaluator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$AnimationHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator$AnimatorUpdateListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/animation/ValueAnimator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/util/FloatProperty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/util/IntProperty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/util/NoSuchPropertyException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/util/Property.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/util/ReflectiveProperty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewHelper$Honeycomb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorHC$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorHC$AnimatorEventListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorHC$NameValuesHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorHC$PropertyBundle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorHC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorICS$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorICS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorPreHC$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorPreHC$AnimatorEventListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorPreHC$NameValuesHolder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorPreHC$PropertyBundle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/ViewPropertyAnimatorPreHC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/nineoldandroids-2.4.0.jar_cqn6np4kcwfohwr79bwsjbcxp/com/nineoldandroids/view/animation/AnimatorProxy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/menu.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/activity/HomeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/activity/HomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/view/SwitchButton.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/flamingo/filterdemo/view/SwitchButton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/add.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/add.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/bottom.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/bottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_pressed.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_pressed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_unpressed.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_unpressed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/frame.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/frame.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/mask.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/mask.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/menu.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/bottom.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/bottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/btn_pressed.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/btn_pressed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/btn_unpressed.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/btn_unpressed.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/frame.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/frame.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/mask.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/mask.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/flamingo/filterdemo/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/flamingo/filterdemo/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_home.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_titlebar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/view_titlebar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/flamingo/filterdemo/activity/WelcomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/flamingo/filterdemo/activity/WelcomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_titlebar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_titlebar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/setting_ai.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/setting_ai.xml" />
     </list>
     <ignored path="FilterDEMO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -225,8 +101,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.113164">
-              <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+            <state vertical-scroll-proportion="1.1085451">
+              <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
               <folding>
                 <element signature="e#783#816#0" expanded="true" />
                 <element signature="e#1016#1036#0" expanded="true" />
@@ -1935,6 +1811,100 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FilterDEMO" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FilterDEMO" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dimens.xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FilterDEMO" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FilterDEMO" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FilterDEMO" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -2243,7 +2213,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2264,7 +2234,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2519,7 +2489,7 @@
         <state vertical-scroll-proportion="-3.3962264">
           <caret line="12" column="44" selection-start-line="6" selection-start-column="3" selection-end-line="12" selection-end-column="44" />
           <folding>
-            <element signature="e#666#699#0" expanded="true" />
+            <element signature="e#666#699#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2529,7 +2499,7 @@
         <state vertical-scroll-proportion="0.8596491">
           <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2657,8 +2627,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.113164">
-          <caret line="61" column="46" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
+        <state vertical-scroll-proportion="1.1085451">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
             <element signature="e#783#816#0" expanded="true" />
             <element signature="e#1016#1036#0" expanded="true" />
