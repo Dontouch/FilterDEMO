@@ -13,12 +13,12 @@
     </com.flamingo.filterdemo.view.TitleBar>
 
 
-    <ListView
+    <com.flamingo.filterdemo.view.XListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bai_listview"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         >
-    </ListView>
+    </com.flamingo.filterdemo.view.XListView>
 
 </LinearLayout>

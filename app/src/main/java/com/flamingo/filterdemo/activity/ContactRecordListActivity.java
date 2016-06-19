@@ -149,6 +149,41 @@ public class ContactRecordListActivity extends BaseActivity {
 
         if("1".equals(key)){
 
+            titleBar = (TitleBar) findViewById(R.id.contact_title);
+            titleBar.showLeftImageAndRightStr("请选择白名单","完成",
+                    getResources().getDrawable(R.drawable.app_back),
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            SkipActivityforClass(ContactRecordListActivity.this,
+                                    HeiActivity.class);
+                        }
+                    }, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            for(int i =0 ; i<list.size();i++){
+                                if(list.get(i).isAdd()){
+                                    myDbHelper  =new MyDbHelper(ContactRecordListActivity.this);
+                                    myDbHelper.open();
+                                    String strnumber = list.get(i).getNumber();
+                                    String strname = list.get(i).getName();
+                                    myDbHelper.insertData(strnumber, strname, "white");
+                                    myDbHelper.close();
+
+                                    Toast toast=Toast.makeText(ContactRecordListActivity.this,"添加成功",Toast.LENGTH_LONG);
+                                    toast.setGravity(Gravity.CENTER, 0, 0);
+                                    toast.show();
+
+                                    SkipActivityforClass(ContactRecordListActivity.this,BaiActivity.class);
+
+                                    finish();
+
+                                }
+                            }
+
+                        }
+                    });
+
         }
 
         contactRecordList = (ListView) findViewById(R.id.call_log_list);
@@ -168,5 +203,5 @@ public class ContactRecordListActivity extends BaseActivity {
 
     }
 
-    
+
 }

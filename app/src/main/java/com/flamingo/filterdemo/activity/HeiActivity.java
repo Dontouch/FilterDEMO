@@ -77,6 +77,10 @@ public class HeiActivity extends BaseActivity implements XListView.IXListViewLis
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 
+                                Intent intent = new Intent();
+                                intent.putExtra("key", "0");
+                                intent.setClass(HeiActivity.this, ContactRecordListActivity.class);
+                                startActivity(intent);
                             }
                         });
 

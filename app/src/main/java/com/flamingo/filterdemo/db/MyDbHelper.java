@@ -22,6 +22,9 @@ public class MyDbHelper {
     private static final String TABLE_BLACK=    //黑名单
             "create table black(number text primary key, name text,frequency text)";
 
+    private static final String TABLE_WHITE=    //白名单
+            "create table white(number text primary key, name text)";
+
 
     //数据库版本
     private static final int DB_VERSION=1;
@@ -46,12 +49,14 @@ public class MyDbHelper {
         public void onCreate(SQLiteDatabase db) {
             db.execSQL(TABLE_RECORD);
             db.execSQL(TABLE_BLACK);
+            db.execSQL(TABLE_WHITE);
         }
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             db.execSQL("drop table if exists record");    //删除表
             db.execSQL("drop table if exists black");
+            db.execSQL("drop table if exists white");
             onCreate(db);
         }
     }
@@ -100,6 +105,9 @@ public class MyDbHelper {
         v.put("name", name);
         return sqlitedatabase.insert(table, null, v);
     }
+
+
+
 
 
 

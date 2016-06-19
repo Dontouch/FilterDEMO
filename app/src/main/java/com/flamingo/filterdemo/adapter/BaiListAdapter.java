@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.flamingo.filterdemo.Bean.HeiBean;
+import com.flamingo.filterdemo.Bean.BaiBean;
 import com.flamingo.filterdemo.R;
 
 import java.util.List;
@@ -16,20 +16,20 @@ import java.util.List;
 /**
  * Created by Dontouch on 16/6/14.
  */
-public class HeiListAdapter extends BaseAdapter {
+public class BaiListAdapter extends BaseAdapter {
 
     private LayoutInflater inflater;
-    private List<HeiBean> list = null;
+    private List<BaiBean> list = null;
     private Context mContext;
 
 
-    public HeiListAdapter(Context context, List<HeiBean> list){
+    public BaiListAdapter(Context context, List<BaiBean> list){
         this.mContext = context;
         this.inflater = LayoutInflater.from(context);
         this.list = list;
     }
 
-    public void updateListView(List<HeiBean> list) {
+    public void updateListView(List<BaiBean> list) {
         this.list = list;
         notifyDataSetChanged();
     }
@@ -60,22 +60,23 @@ public class HeiListAdapter extends BaseAdapter {
 
             holder.name =(TextView) view.findViewById(R.id.item_hei_name);
             holder.number = (TextView) view.findViewById(R.id.item_hei_number);
-            holder.fequency = (TextView) view.findViewById(R.id.item_hei_frequency);
+            view.findViewById(R.id.item_hei_frequency).setVisibility(View.INVISIBLE);
+            view.findViewById(R.id.item_hei_frequency_title).setVisibility(View.INVISIBLE);
+
             view.setTag(holder);
         } else {
             holder = (ViewHolder) view.getTag();
         }
 
-        HeiBean hei = list.get(i);
+        BaiBean bai = list.get(i);
 
 
-        String name = hei.getName();
-        String number = hei.getNumber();
-        String frequency = hei.getFrequency();
+        String name = bai.getName();
+        String number = bai.getNumber();
+
 
         holder.name.setText(name);
         holder.number.setText(number);
-        holder.fequency.setText(frequency);
 
 
         return view;
@@ -85,6 +86,6 @@ public class HeiListAdapter extends BaseAdapter {
     private static class ViewHolder {
         TextView name;
         TextView number;
-        TextView fequency;
+
     }
 }
