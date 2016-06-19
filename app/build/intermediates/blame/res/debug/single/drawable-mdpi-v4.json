@@ -4,8 +4,52 @@
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/add.png"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/frame.png",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/frame.png"
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/arrow.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/arrow.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/default_round_head.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/default_round_head.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/menu.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/menu.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/round_checked.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/round_checked.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/loadingdialog.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/loadingdialog.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/bottom.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/bottom.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/pull_to_refresh_arrow.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/pull_to_refresh_arrow.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/sort_icon_bg_click.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/sort_icon_bg_click.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/dic_background.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/dic_background.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/round_unchecked.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/round_unchecked.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_back_normal.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/btn_back_normal.png"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/bg.jpg",
@@ -16,27 +60,39 @@
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/welcome_bg.png"
     },
     {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/frame.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/frame.png"
+    },
+    {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_pressed.png",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/btn_pressed.png"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/menu.png",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/menu.png"
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/del.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/del.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_back_pressed.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/btn_back_pressed.png"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/mask.png",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/mask.png"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/btn_unpressed.png",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/btn_unpressed.png"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/bottom.png",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/bottom.png"
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/edit.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/edit.png"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/app_back.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/drawable-mdpi/app_back.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/common_full_open_on_phone.png",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/drawable-mdpi/common_full_open_on_phone.png"
     }
 ]

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.HeiActivity" >
+
+    <item android:id="@+id/hbdrop"    android:title="@string/drop"/>
+    <item android:id="@+id/clearhei"  android:title="@string/drophei"/>
+    <item android:id="@+id/updatebei"   android:title="@string/update"/>
+
+</menu>

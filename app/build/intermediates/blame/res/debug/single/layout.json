@@ -8,11 +8,75 @@
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/activity_welcome.xml"
     },
     {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/item_contact_list.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/item_contact_list.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/setting_location.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/setting_location.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/comment.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/comment.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/setting_time.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/setting_time.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/view_contact_list.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_contact_list.xml"
+    },
+    {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/view_titlebar.xml",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_titlebar.xml"
     },
     {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/add_hei.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/add_hei.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/add_bai.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/add_bai.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/xlistview_header.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/xlistview_header.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/dialogpeoadd.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/dialogpeoadd.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/item_contact_record_list.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/item_contact_record_list.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/item_record.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/item_record.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/view_contact_record_list.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_contact_record_list.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/xlistview_footer.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/xlistview_footer.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/add_heibai.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/add_heibai.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/setting_ai.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/setting_ai.xml"
+    },
+    {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/item_hei_list.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/item_hei_list.xml"
     }
 ]

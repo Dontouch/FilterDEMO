@@ -108,6 +108,12 @@
                     android:layout_marginRight="100dp" />
             </RelativeLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_margin="3dp"
+                android:background="#EDEDED" />
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -120,7 +126,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
-                    android:text="智能拦截" />
+                    android:text="智能拦截陌生人" />
 
                 <com.flamingo.filterdemo.view.SwitchButton
                     android:id="@+id/filter_ai"
@@ -130,6 +136,12 @@
                     android:layout_centerInParent="true"
                     android:layout_marginRight="100dp" />
             </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_margin="3dp"
+                android:background="#EDEDED" />
 
 
             <RelativeLayout
@@ -154,6 +166,12 @@
                     android:layout_marginRight="100dp" />
             </RelativeLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_margin="3dp"
+                android:background="#EDEDED" />
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -177,6 +195,12 @@
                     android:layout_marginRight="100dp" />
             </RelativeLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:layout_margin="3dp"
+                android:background="#EDEDED" />
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -188,7 +212,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
-                    android:text="拦截陌生人" />
+                    android:text="拦截所有人" />
 
                 <com.flamingo.filterdemo.view.SwitchButton
                     android:id="@+id/filter_all"
