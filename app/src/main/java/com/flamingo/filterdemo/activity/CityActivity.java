@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.flamingo.filterdemo.R;
-import com.flamingo.filterdemo.util.ProvinceUtil;
+import com.flamingo.filterdemo.util.LocationUtil;
 import com.flamingo.filterdemo.view.TitleBar;
 
 import java.util.ArrayList;
@@ -24,8 +24,8 @@ public class CityActivity extends BaseActivity{
     private TitleBar titleBar;
     private ListView province_list;
 
-    List<ArrayList<String>> list = ProvinceUtil.getCity();
-    List<String> item =ProvinceUtil.getProvice();
+    List<ArrayList<String>> list = LocationUtil.getCity();
+    List<String> item = LocationUtil.getProvice();
 
 
     int n=0;//确定省市

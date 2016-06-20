@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="19"
+    density="hdpi"
+    format="7"
+    timestamp="19188964344831" >
+
+    <task
+        name="javac"
+        duration="1327" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="445" />
+    <task
+        name="verifier"
+        duration="93" />
+
+    <artifact
+        location="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="19188964344831" >
+        <artifact
+            location="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

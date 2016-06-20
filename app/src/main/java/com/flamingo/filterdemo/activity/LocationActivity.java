@@ -20,10 +20,12 @@ public class LocationActivity extends BaseActivity{
     Spinner spinner;
     EditText rigon;
 
+    private SharedPreferences sp;
+
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-
+        setContentView(R.layout.setting_location);
         initViews();
         initData();
         OnClick();
@@ -47,6 +49,8 @@ public class LocationActivity extends BaseActivity{
         spinner=(Spinner) findViewById(R.id.setting_spinner);
         rigon=(EditText) findViewById(R.id.sett_local);
 
+        sp=getSharedPreferences("rule_record", MODE_PRIVATE);
+
     }
 
     @Override
@@ -68,10 +72,10 @@ public class LocationActivity extends BaseActivity{
             @Override
             public void onItemSelected(AdapterView<?> arg0, View arg1,
                                        int arg2, long arg3) {
-                SharedPreferences sp=getSharedPreferences("rule_record", MODE_PRIVATE);
-                SharedPreferences.Editor edit=sp.edit();
-                edit.putInt("spinner", arg2);
-                edit.commit();
+
+                SharedPreferences.Editor editor=sp.edit();
+                editor.putInt("spinner", arg2);
+                editor.commit();
             }
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {}

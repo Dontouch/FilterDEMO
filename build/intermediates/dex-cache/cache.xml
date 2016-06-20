@@ -5,8 +5,57 @@
         jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="d76e7e3a4cdc20ba103ecb99f869d3b5aee1bb11">
-        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_fc7d8a61312f1de7b6400f31c37580dfe3e2eae8/classes.dex" />
+        sha1="5fe9c8dbccdfc4f33f4ab52dc0ce9468a77a4219">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_fc7d8a61312f1de7b6400f31c37580dfe3e2eae8.jar" />
+    </item>
+    <item
+        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_329133b8cf064e35638ebc9e55574a0a82eca605.jar" />
+    </item>
+    <item
+        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.0_c622c19e7a5084780f150cad71514640342098fa.jar" />
+    </item>
+    <item
+        jar="/Applications/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.0_f851e1f8b356482a10e47e8c7c0986bb5222f709.jar" />
+    </item>
+    <item
+        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0_ffba69e6524fca5c3a3fc91d867828986a5055b9.jar" />
+    </item>
+    <item
+        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0_cf5f448ef633a698667fff1e8fea8d8856bd5809.jar" />
+    </item>
+    <item
+        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_5e664a06e9dcc28bec5483a69a45503a1aba22bb.jar" />
+    </item>
+    <item
+        jar="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="72222554d26506cc486a252bfd0b3d39c864ea14">
+        <dex dex="/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/pre-dexed/debug/instant-run_1a425a3e6195538978dcc21098b8a52ac9d5be24.jar" />
     </item>
 
 </items>

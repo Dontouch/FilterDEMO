@@ -10,7 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.flamingo.filterdemo.R;
-import com.flamingo.filterdemo.util.ProvinceUtil;
+import com.flamingo.filterdemo.util.LocationUtil;
 import com.flamingo.filterdemo.view.TitleBar;
 
 import java.util.List;
@@ -24,7 +24,10 @@ public class ProvinceActivity extends BaseActivity {
     private ListView province_list;
 
 
-    List<String> list= ProvinceUtil.getProvice();
+    //通过LocationUtil 获取省份
+    List<String> list= LocationUtil.getProvince();
+
+    private SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle arg0) {
@@ -32,10 +35,7 @@ public class ProvinceActivity extends BaseActivity {
         setContentView(R.layout.activity_province);
 
         initViews();
-
-
     }
-
 
 
     @Override
@@ -88,7 +88,8 @@ public class ProvinceActivity extends BaseActivity {
         province_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                SharedPreferences sp=getSharedPreferences("rule_record", MODE_PRIVATE);
+
+                sp=getSharedPreferences("rule_record", MODE_PRIVATE);
                 SharedPreferences.Editor edit=sp.edit();
                 edit.putInt("provinceid", position);
                 if(position<list.size()-4){

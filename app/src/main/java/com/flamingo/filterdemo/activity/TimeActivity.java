@@ -26,10 +26,11 @@ public class TimeActivity extends BaseActivity{
     private TitleBar titleBar;
     private RadioGroup rg;
     private LinearLayout startlinear,stoplinear;
-    private TextView starttime,starttitle,stoptime,stoptitle,quit;
-    SharedPreferences sp;
+    private TextView starttime,starttitle,stoptime,stoptitle;
+    private SharedPreferences sp;
 
     boolean kind=true; //判断时间模式
+
 
     @SuppressLint("HandlerLeak")
     Handler handler = new Handler(){
@@ -81,8 +82,10 @@ public class TimeActivity extends BaseActivity{
         rg=(RadioGroup) findViewById(R.id.timeRgroup);
         startlinear=(LinearLayout) findViewById(R.id.startLinear);
         stoplinear=(LinearLayout) findViewById(R.id.stopLinear);
+
         starttime=(TextView) findViewById(R.id.time_starttime);
         starttitle=(TextView) findViewById(R.id.time_starttimee);
+
         stoptime=(TextView) findViewById(R.id.time_stoptime);
         stoptitle=(TextView) findViewById(R.id.time_stoptimee);
 
@@ -128,48 +131,50 @@ public class TimeActivity extends BaseActivity{
             }
         });
 
-
-        startlinear.setOnClickListener(new View.OnClickListener(){  //开始时间
-
+        startlinear.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-                Calendar c=Calendar.getInstance();
+            public void onClick(View v) {
+                Calendar c = Calendar.getInstance();
+
                 if(kind){
                     new TimePickerDialog(TimeActivity.this, new TimePickerDialog.OnTimeSetListener() {
-
                         @Override
-                        public void onTimeSet(TimePicker arg0, int arg1, int arg2) {
-                            SharedPreferences.Editor edit=sp.edit();
-                            edit.putInt("starthour", arg1);
-                            edit.putInt("startminue", arg2);
-                            edit.commit();
+                        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+                            SharedPreferences.Editor editor = sp.edit();
+                            editor.putInt("starthour", hourOfDay);
+                            editor.putInt("startminue", minute);
+                            editor.commit();
                             handler.sendEmptyMessage(1);
+
                         }
-                    }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show();
+                    },c.get(Calendar.HOUR_OF_DAY),c.get(Calendar.MINUTE),true).show();
                 }
             }
-
         });
-        stoplinear.setOnClickListener(new View.OnClickListener(){  //结束时间
 
+
+        stoplinear.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-                Calendar c=Calendar.getInstance();
+            public void onClick(View v) {
+                Calendar c = Calendar.getInstance();
+
                 if(kind){
                     new TimePickerDialog(TimeActivity.this, new TimePickerDialog.OnTimeSetListener() {
-
                         @Override
-                        public void onTimeSet(TimePicker arg0, int arg1, int arg2) {
-                            SharedPreferences.Editor edit=sp.edit();
-                            edit.putInt("endhour", arg1);
-                            edit.putInt("endminue", arg2);
-                            edit.commit();
+                        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+
+                            SharedPreferences.Editor editor = sp.edit();
+                            editor.putInt("endhour", hourOfDay);
+                            editor.putInt("endminue", minute);
+                            editor.commit();
                             handler.sendEmptyMessage(1);
+
                         }
-                    }, c.get(Calendar.HOUR_OF_DAY), c.get(Calendar.MINUTE), true).show();
+                    },c.get(Calendar.HOUR_OF_DAY),c.get(Calendar.MINUTE),true).show();
                 }
             }
-
         });
+
     }
 }
