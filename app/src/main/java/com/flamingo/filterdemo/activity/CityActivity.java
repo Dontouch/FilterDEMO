@@ -25,7 +25,7 @@ public class CityActivity extends BaseActivity{
     private ListView province_list;
 
     List<ArrayList<String>> list = LocationUtil.getCity();
-    List<String> item = LocationUtil.getProvice();
+    List<String> item = LocationUtil.getProvince();
 
 
     int n=0;//确定省市
@@ -102,7 +102,7 @@ public class CityActivity extends BaseActivity{
                 SharedPreferences.Editor edit = sp.edit();
                 edit.putInt("cityid", position);
                 edit.putString("cityname", list.get(n).get(position));
-                edit.putString("provincename", item.get(n) + "-");
+                edit.putString("provincename", list.get(n) + "-");
                 edit.commit();
                 finish();
             }
