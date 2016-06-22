@@ -23,10 +23,4 @@ dependencies {
     compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/nineoldandroids-2.4.0.jar')
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/android-support-v4.jar')
-    compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/commons-beanutils-1.7.0.jar')
-    compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/commons-collections-3.2.jar')
-    compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/commons-lang-2.4.jar')
-    compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/commons-logging-1.1.jar')
-    compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/ezmorph-1.0.4.jar')
-    compile files('/Users/Dontouch/Documents/workspace/FilterDEMO/libs/json-lib-2.2.2-jdk15.jar')
 }
