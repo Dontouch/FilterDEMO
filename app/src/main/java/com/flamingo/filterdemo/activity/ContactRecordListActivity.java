@@ -109,9 +109,11 @@ public class ContactRecordListActivity extends BaseActivity {
     public void initViews() {
         super.initViews();
 
+        titleBar = (TitleBar) findViewById(R.id.contact_record_title);
 
         if("0".equals(key)){
-            titleBar = (TitleBar) findViewById(R.id.contact_title);
+
+
             titleBar.showLeftImageAndRightStr("请选择黑名单","完成",
                     getResources().getDrawable(R.drawable.app_back),
                     new View.OnClickListener() {
@@ -138,7 +140,7 @@ public class ContactRecordListActivity extends BaseActivity {
 
                                     SkipActivityforClass(ContactRecordListActivity.this,HeiActivity.class);
 
-                                    finish();
+                                    ContactRecordListActivity.this.finish();
 
                                 }
                             }
@@ -149,7 +151,7 @@ public class ContactRecordListActivity extends BaseActivity {
 
         if("1".equals(key)){
 
-            titleBar = (TitleBar) findViewById(R.id.contact_title);
+            titleBar = (TitleBar) findViewById(R.id.contact_record_title);
             titleBar.showLeftImageAndRightStr("请选择白名单","完成",
                     getResources().getDrawable(R.drawable.app_back),
                     new View.OnClickListener() {

@@ -6,7 +6,8 @@ package com.flamingo.filterdemo.core;
  * @author boyliang
  */
 public abstract class AbsTrigger {
-	
+
+
 	/**
 	 * 触发监听器
 	 * @author boyliang

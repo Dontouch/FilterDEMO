@@ -75,6 +75,9 @@ public class BaiListAdapter extends BaseAdapter {
         String number = bai.getNumber();
 
 
+        if("".equals(name)){
+            name ="陌生人";
+        }
         holder.name.setText(name);
         holder.number.setText(number);
 

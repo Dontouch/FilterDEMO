@@ -2,26 +2,23 @@ package com.flamingo.filterdemo.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.flamingo.filterdemo.Bean.BaiBean;
-
 import com.flamingo.filterdemo.R;
 import com.flamingo.filterdemo.adapter.BaiListAdapter;
 import com.flamingo.filterdemo.db.MyDbHelper;
+import com.flamingo.filterdemo.view.RefreshableView;
 import com.flamingo.filterdemo.view.TitleBar;
-import com.flamingo.filterdemo.view.XListView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,15 +26,19 @@ import java.util.List;
 /**
  * Created by Dontouch on 16/6/19.
  */
-public class BaiActivity  extends BaseActivity implements XListView.IXListViewListener {
+public class BaiActivity extends BaseActivity {
+
 
     private TitleBar titleBar;
-    private XListView bai_listview;
+    private RefreshableView refreshableView;
+    private ListView listView;
 
     private MyDbHelper myDbHelper;
-
     private List<BaiBean> list = new ArrayList<BaiBean>();
     private BaiBean baiBean;
+
+    private BaiListAdapter adapter;
+
 
     @Override
     protected void onCreate(Bundle arg0) {
@@ -57,45 +58,63 @@ public class BaiActivity  extends BaseActivity implements XListView.IXListViewLi
                 }, new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        SkipActivityforClass(BaiActivity.this,
+                                choseaddBai.class);
+                    }
+                });
 
-                        AlertDialog dialog = new AlertDialog.Builder(BaiActivity.this).create();
+        refreshableView = (RefreshableView) findViewById(R.id.bai_refreshable_view);
+        listView =(ListView) findViewById(R.id.bai_listview);
 
-                        dialog.setTitle("请选择添加方式");
-                        dialog.setButton("通过通讯录添加", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
+        getData();
+        initViews();
+    }
 
-                                Intent intent = new Intent();
-                                intent.putExtra("key", "1");
-                                intent.setClass(BaiActivity.this, ContactListActivity.class);
-                                startActivity(intent);
+    @Override
+    public void initViews() {
+        super.initViews();
 
-                            }
-                        });
 
-                        dialog.setButton("通过通讯记录添加", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
 
-                                Intent intent = new Intent();
-                                intent.putExtra("key", "1");
-                                intent.setClass(BaiActivity.this, ContactRecordListActivity.class);
-                                startActivity(intent);
-                            }
-                        });
+         adapter= new BaiListAdapter(this,list);
+        //dapter listview.setAdapter(list)
 
-                        dialog.setButton("手动输入", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
+        synchronized(BaiActivity.this){
+            listView.setAdapter(adapter);
+        }
 
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
+
+                final String number = list.get(position).getNumber();
+
+                //删除黑名单 更新黑名单的数据
+                final AlertDialog.Builder dialog = new AlertDialog.Builder(BaiActivity.this);
+
+                dialog.setTitle("请选择对操作");
+                dialog.setItems(new String[]{"修改备注", "删除改白名单"}, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        switch (which){
+                            case 0:
                                 AlertDialog.Builder builder=new AlertDialog.Builder(BaiActivity.this);
-                                LayoutInflater factory = LayoutInflater.from(BaiActivity.this);
 
-                                final View view = factory.inflate(R.layout.dialogpeoadd,null);
+                                LayoutInflater factory=LayoutInflater.from(BaiActivity.this);
+
+                                final View view=factory.inflate(R.layout.comment, null);
+                                view.setPadding(36,12,12,12);
 
                                 builder.setView(view);
-                                builder.setTitle("添加号码到白名单");
+                                TextView tv=(TextView)view.findViewById(R.id.coment_text);
+                                tv.setText(number);
+
                                 builder.setIcon(R.drawable.edit);
+                                builder.setTitle("输出新的备注");
+
 
                                 builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
 
@@ -109,186 +128,71 @@ public class BaiActivity  extends BaseActivity implements XListView.IXListViewLi
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
 
-                                        myDbHelper  =new MyDbHelper(BaiActivity.this);
+                                        EditText et=(EditText) view.findViewById(R.id.comment_edit);
+                                        String str=et.getText().toString();
+
+                                        myDbHelper=new MyDbHelper(BaiActivity.this);
                                         myDbHelper.open();
+                                        myDbHelper.updataData(number, str, "white");
+                                        myDbHelper.close();
 
-                                        EditText name=(EditText) view.findViewById(R.id.edit_whilename);
-                                        EditText number=(EditText) view.findViewById(R.id.edit_whilenumber);
+                                        fresh();
 
-                                        final String strname=name.getText().toString();
-                                        final String strnumber=number.getText().toString();
 
-                                        if(strname.equals("")||strnumber.equals("")){
-
-                                            Toast toast=Toast.makeText(BaiActivity.this,"姓名与号码不能为空",Toast.LENGTH_LONG);
-                                            toast.setGravity(Gravity.CENTER, 0, 0);
-                                            toast.show();
-                                            myDbHelper.close();
-                                            dialog.dismiss();
-                                        }else {
-                                            if(judge(strnumber)){
-                                                Toast toast=Toast.makeText(BaiActivity.this,"该号码已存在黑名单中",Toast.LENGTH_LONG);
-                                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                                toast.show();
-                                                dialog.dismiss();
-                                            }else{
-                                                myDbHelper.insertData(strnumber, strname, "white");
-                                                myDbHelper.close();
-
-                                                loadData();
-                                                Toast toast=Toast.makeText(BaiActivity.this,"添加成功",Toast.LENGTH_LONG);
-                                                toast.setGravity(Gravity.CENTER, 0, 0);
-                                                toast.show();
-                                                dialog.dismiss();
-
-                                            }
-                                        }
+                                        dialog.dismiss();
 
                                     }
                                 });
 
                                 builder.create().show();
+                                break;
 
+                            case 1:
+                                AlertDialog delDialog = new AlertDialog.Builder(
+                                        BaiActivity.this)
+                                        .setTitle("确认删除")
+                                        .setMessage("确认删除?")
+                                        .setPositiveButton("确定",
+                                                new DialogInterface.OnClickListener() {
 
-                            }
-                        });
+                                                    @Override
+                                                    public void onClick(
+                                                            DialogInterface dialog,
+                                                            int which) {
 
-                        dialog.setButton2("取消", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
+                                                        myDbHelper=new MyDbHelper(BaiActivity.this);
+                                                        myDbHelper.open();
+                                                        myDbHelper.deleteData(number, "black");
+                                                        myDbHelper.close();
 
-                        dialog.show();
-                    }
-                });
+                                                        fresh();
 
+                                                        dialog.dismiss();
 
-        initViews();
-    }
+                                                    }
+                                                })
+                                        .setNegativeButton("取消",
+                                                new DialogInterface.OnClickListener() {
 
-    @Override
-    public void initViews() {
-        super.initViews();
+                                                    @Override
+                                                    public void onClick(
+                                                            DialogInterface dialog,
+                                                            int which) {
+                                                        dialog.dismiss();
+                                                    }
+                                                }).create();
+                                delDialog.show();
 
+                                break;
 
-        bai_listview =(XListView) findViewById(R.id.bai_listview);
-        bai_listview.setPullLoadEnable(true);
-        loadData();// 刷新
-
-        bai_listview.setXListViewListener(this);
-
-        bai_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
-
-                final String number = list.get(position).getNumber();
-
-                //删除黑名单 更新黑名单的数据
-                final AlertDialog dialog = new AlertDialog.Builder(BaiActivity.this).create();
-
-                dialog.setTitle("请选择对操作");
-                dialog.setButton("修改备注", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        AlertDialog.Builder builder=new AlertDialog.Builder(BaiActivity.this);
-
-                        LayoutInflater factory=LayoutInflater.from(BaiActivity.this);
-
-                        final View view=factory.inflate(R.layout.comment, null);
-
-                        builder.setView(view);
-                        TextView tv=(TextView)view.findViewById(R.id.coment_text);
-                        tv.setText(number);
-
-                        builder.setIcon(R.drawable.edit);
-                        builder.setTitle("输出新的备注");
-
-
-                        builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        });
-                        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-
-                                EditText et=(EditText) view.findViewById(R.id.comment_edit);
-                                String str=et.getText().toString();
-
-                                myDbHelper=new MyDbHelper(BaiActivity.this);
-                                myDbHelper.open();
-                                myDbHelper.updataData(number, str, "white");
-                                myDbHelper.close();
-
-                                loadData();
-
-                                dialog.dismiss();
-
-                            }
-                        });
-
-                        builder.create().show();
-
-
-
-                    }
-                });
-
-                dialog.setButton("删除改黑名单", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-
-                        AlertDialog delDialog = new AlertDialog.Builder(
-                                BaiActivity.this)
-                                .setTitle("确认删除")
-                                .setMessage("确认删除?")
-                                .setPositiveButton("确定",
-                                        new DialogInterface.OnClickListener() {
-
-                                            @Override
-                                            public void onClick(
-                                                    DialogInterface dialog,
-                                                    int which) {
-
-                                                myDbHelper=new MyDbHelper(BaiActivity.this);
-                                                myDbHelper.open();
-                                                myDbHelper.deleteData(number, "black");
-                                                myDbHelper.close();
-
-                                                loadData();
-
-                                                dialog.dismiss();
-
-                                            }
-                                        })
-                                .setNegativeButton("取消",
-                                        new DialogInterface.OnClickListener() {
-
-                                            @Override
-                                            public void onClick(
-                                                    DialogInterface dialog,
-                                                    int which) {
-                                                dialog.dismiss();
-                                            }
-                                        }).create();
-                        delDialog.show();
-
-
-
+                        }
 
                     }
                 });
 
 
-                dialog.setButton2("取消", new DialogInterface.OnClickListener() {
+
+                dialog.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
@@ -300,9 +204,24 @@ public class BaiActivity  extends BaseActivity implements XListView.IXListViewLi
         });
 
 
+        refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                // 下拉刷新的监听
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                refreshableView.finishRefreshing();
+
+            }
+        },0);
+
     }
 
-    private void loadData(){
+    private  void  getData(){
 
         //加载黑名单的数据 从数据库中加载
 
@@ -323,75 +242,28 @@ public class BaiActivity  extends BaseActivity implements XListView.IXListViewLi
 
         myDbHelper.close();
 
-        BaiListAdapter adapter = new BaiListAdapter(this,list);
-        //dapter listview.setAdapter(list)
-        bai_listview.setAdapter(adapter);
 
     }
 
-    private boolean judge(String phone){  //判断是不在黑名单中
 
-        Cursor cur=myDbHelper.querData("black");
-        cur.moveToFirst();
-        while(!cur.isAfterLast()){
-            if(phone.equals(cur.getString(0))){
-                myDbHelper.close();
-                return true;
-            }
-            cur.moveToNext();
-        }
-        return false;
-    }
 
     @Override
     public void initData() {
         super.initData();
     }
 
+    private void fresh(){
+        getData();
+        initViews();
 
-    //添加菜单事件
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.heimenu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onMenuItemSelected(int featureId, MenuItem item) {
-        int item_id = item.getItemId();
-        switch (item_id) {
-            case R.id.hbdrop: // 退出程序
-                BaiActivity.this.finish();
-                break;
-            case R.id.clearhei: // 清空黑名单表
-                myDbHelper = new MyDbHelper(BaiActivity.this);
-                myDbHelper.open();
-                myDbHelper.clearData("black");
-                myDbHelper.close();
-                break;
-
-            case R.id.updatebei: // 更新通讯录
-                new Thread() {
-
-                    @Override
-                    public void run() {
-                        loadData();
-                    }
-
-                }.start();
-                break;
-        }
-        return super.onMenuItemSelected(featureId, item);
     }
 
 
     @Override
-    public void onRefresh() {
-        loadData();
+    protected void onResume() {
+        super.onResume();
+        fresh();
     }
 
-    @Override
-    public void onLoadMore() {
 
-    }
 }

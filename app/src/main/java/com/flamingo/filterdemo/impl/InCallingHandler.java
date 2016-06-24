@@ -12,8 +12,11 @@ public final class InCallingHandler extends AbsHandler {
 	
 	@Override
 	public void handle(MessageData data) {
-		// TODO Auto-generated method stub 
-		super.handle(data);
+
+		int opcode = data.getInt(MessageData.KEY_OP);
+		String phone = data.getString(MessageData.KEY_DATA);
+
+
 	}
 
 

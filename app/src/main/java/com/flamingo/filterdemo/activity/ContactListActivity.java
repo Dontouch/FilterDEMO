@@ -54,6 +54,7 @@ public class ContactListActivity extends BaseActivity {
 
     private int lastFirstVisibleItem = -1;
 
+
     private MyDbHelper myDbHelper;
 
 
@@ -63,8 +64,9 @@ public class ContactListActivity extends BaseActivity {
         setContentView(R.layout.view_contact_list);
 
         this.key = (String)getIntent().getSerializableExtra("key");
+//        this.key = "0";
 
-        initData();
+
         initViews();
 
     }
@@ -244,6 +246,9 @@ public class ContactListActivity extends BaseActivity {
                 adapter.notifyDataSetChanged();
             }
         });
+
+
+        initData();
 
 
         Collections.sort(list, pinyinComparator);

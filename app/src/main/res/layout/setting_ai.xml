@@ -23,7 +23,7 @@
 
         >
         <TextView
-            android:id="@+id/strange_smsinstall"
+            android:id="@+id/strange_sms"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/smsinstall"
@@ -38,7 +38,7 @@
             android:background="@color/gray"
             />
         <TextView
-            android:id="@+id/strange_timeinstall"
+            android:id="@+id/strange_time"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/timeinstrall"
@@ -83,7 +83,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dip"
-                android:id="@+id/strange_smssinstall"
+                android:id="@+id/strange_smss"
                 android:paddingTop="23dp"
                 />
         </LinearLayout>
@@ -112,7 +112,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dip"
-                android:id="@+id/strange_phoneinstall"
+                android:id="@+id/strange_phone"
                 android:paddingTop="23dp"
                 />
         </LinearLayout>
@@ -141,7 +141,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dip"
-                android:id="@+id/strange_timespaneinstall"
+                android:id="@+id/strange_timespane"
                 android:paddingTop="23dp"
                 />
         </LinearLayout>

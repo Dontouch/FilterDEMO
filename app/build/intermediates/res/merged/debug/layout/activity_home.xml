@@ -126,7 +126,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
-                    android:text="智能拦截陌生人" />
+                    android:text="智能拦截陌生人"
+                    android:id="@+id/setting_ai"/>
 
                 <com.flamingo.filterdemo.view.SwitchButton
                     android:id="@+id/filter_ai"
@@ -155,7 +156,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
-                    android:text="按时间拦截" />
+                    android:text="按时间拦截"
+                    android:id="@+id/setting_time"/>
 
                 <com.flamingo.filterdemo.view.SwitchButton
                     android:id="@+id/filter_time"
@@ -184,7 +186,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
-                    android:text="按地区拦截" />
+                    android:text="按地区拦截"
+                    android:id="@+id/setting_location"/>
 
                 <com.flamingo.filterdemo.view.SwitchButton
                     android:id="@+id/filter_location"
@@ -212,7 +215,8 @@
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
-                    android:text="拦截所有人" />
+                    android:text="拦截所有人"
+                    />
 
                 <com.flamingo.filterdemo.view.SwitchButton
                     android:id="@+id/filter_all"

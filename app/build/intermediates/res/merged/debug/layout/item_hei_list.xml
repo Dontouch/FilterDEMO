@@ -17,7 +17,8 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/black"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:text="name"/>
+        android:text="陌生人"/>
+
 
 
     <TextView
@@ -26,8 +27,8 @@
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginLeft="16dp"
         android:textColor="@color/black"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="number"/>
 
 
@@ -38,7 +39,7 @@
         android:singleLine="true"
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@color/black"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="32dp"
         android:text="拦截次数："/>
 
 
@@ -48,8 +49,9 @@
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginRight="32dp"
         android:textColor="@color/black"
-        android:text="frequency"/>
+        android:text="0"/>
 
 
 </LinearLayout>

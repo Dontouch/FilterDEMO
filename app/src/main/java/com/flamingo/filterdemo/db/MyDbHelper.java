@@ -17,7 +17,7 @@ public class MyDbHelper {
     private static final String DB_NAME="list.db";
 
     private static final String TABLE_RECORD=  //拦截记录
-            "create table record(number text primary key, frquency int, time text,day text)";
+            "create table record(number text primary key, frquency int,  data text)";
 
     private static final String TABLE_BLACK=    //黑名单
             "create table black(number text primary key, name text,frequency text)";
@@ -98,11 +98,25 @@ public class MyDbHelper {
         return true;
     }
 
+    public void updataData(String data ,int frequency,String phone,String table){
+        String str="update "+table+"  set frquency=? , data=?  where number=?";
+        sqlitedatabase.execSQL(str, new Object[]{frequency,data,phone});
+    }
+
     //插入数据01 保存信息
     public long insertData(String number,String name,String table){
         ContentValues v=new ContentValues();
         v.put("number", number);
         v.put("name", name);
+        return sqlitedatabase.insert(table, null, v);
+    }
+
+
+    public long insertData(String number,int count,String data,String table){
+        ContentValues v=new ContentValues();
+        v.put("number", number);
+        v.put("frquency", count);
+        v.put("data", data);
         return sqlitedatabase.insert(table, null, v);
     }
 

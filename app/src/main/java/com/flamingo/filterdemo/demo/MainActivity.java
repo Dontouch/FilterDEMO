@@ -167,9 +167,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		mBlocker = builder
 				.setTrigger(mTrigger)
 				.setHandler(mHandler)
-				.addFilters(new NumeralFilter(IFilter.OP_PASS, "95555", "95588")) 		 //实现白名单放行
-				.addFilters(new NumeralFilter(IFilter.OP_BLOCKED, "106223", "107445"))   //实现黑名单放行
-				.addFilters(new PrefixFilter(IFilter.OP_BLOCKED, "156", "10086", "134")) //前缀拦截
+//				.addFilters(new NumeralFilter(IFilter.OP_PASS, "95555", "95588")) 		 //实现白名单放行
+//				.addFilters(new NumeralFilter(IFilter.OP_BLOCKED, "106223", "107445"))   //实现黑名单放行
+//				.addFilters(new PrefixFilter(IFilter.OP_BLOCKED, "156", "10086", "134")) //前缀拦截
 //				.addFilters(new LocationFilter()) //实现归属地拦截， 进阶课程的内容
 //				.addFilters(new SystemContactFilter()) //系统联系人过滤， 进阶课程的内容
 				.create();

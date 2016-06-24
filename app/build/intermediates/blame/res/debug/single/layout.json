@@ -28,12 +28,20 @@
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_contact_list.xml"
     },
     {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/pull_to_refresh.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/pull_to_refresh.xml"
+    },
+    {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/activity_city.xml",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/activity_city.xml"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/view_titlebar.xml",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_titlebar.xml"
+    },
+    {
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/choose_addbai.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/choose_addbai.xml"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/activity_province.xml",
@@ -44,12 +52,12 @@
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/add_hei.xml"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/add_bai.xml",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/add_bai.xml"
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/choose_addhei.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/choose_addhei.xml"
     },
     {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/xlistview_header.xml",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/xlistview_header.xml"
+        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/add_bai.xml",
+        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/add_bai.xml"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/dialogpeoadd.xml",
@@ -66,10 +74,6 @@
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/view_contact_record_list.xml",
         "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/view_contact_record_list.xml"
-    },
-    {
-        "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/xlistview_footer.xml",
-        "source": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/src/main/res/layout/xlistview_footer.xml"
     },
     {
         "merged": "/Users/Dontouch/Documents/workspace/FilterDEMO/app/build/intermediates/res/merged/debug/layout/add_heibai.xml",

@@ -1,8 +1,5 @@
 package com.flamingo.filterdemo.parser;
 
-/**
- * Created by Dontouch on 16/6/14.
- */
 public class CharacterParser {
 
     private static int[] pyvalue = new int[] {-20319, -20317, -20304, -20295, -20292, -20283, -20265, -20257, -20242, -20230, -20051, -20036, -20032,
@@ -51,8 +48,9 @@ public class CharacterParser {
             "yin", "ying", "yo", "yong", "you", "yu", "yuan", "yue", "yun", "za", "zai", "zan", "zang", "zao", "ze", "zei", "zen", "zeng", "zha",
             "zhai", "zhan", "zhang", "zhao", "zhe", "zhen", "zheng", "zhi", "zhong", "zhou", "zhu", "zhua", "zhuai", "zhuan", "zhuang", "zhui",
             "zhun", "zhuo", "zi", "zong", "zou", "zu", "zuan", "zui", "zun", "zuo"};
-    private StringBuilder buffer;
-    private String resource;
+
+    private StringBuilder buffer=null;
+    private String resource =null;
     private static CharacterParser characterParser = new CharacterParser();
 
     public static CharacterParser getInstance() {

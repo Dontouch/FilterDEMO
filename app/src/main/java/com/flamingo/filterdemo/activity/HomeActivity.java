@@ -1,5 +1,6 @@
 package com.flamingo.filterdemo.activity;
 
+import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -9,6 +10,8 @@ import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +23,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 
+import com.flamingo.filterdemo.Bean.BaiBean;
 import com.flamingo.filterdemo.R;
 import com.flamingo.filterdemo.core.AbsHandler;
 import com.flamingo.filterdemo.core.AbsTrigger;
@@ -37,6 +41,8 @@ import com.flamingo.filterdemo.view.DragLayout;
 import com.flamingo.filterdemo.view.SwitchButton;
 import com.flamingo.filterdemo.view.TitleBar;
 import com.nineoldandroids.view.ViewHelper;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -60,6 +66,10 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
     private SwitchButton sLocation;
     private SwitchButton sAll;
 
+    private TextView setting_ai;
+    private TextView setting_time;
+    private TextView setting_location;
+
 
     private ListView filter_listview;
     BaseAdapter adapter;
@@ -77,32 +87,59 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
     private Handler mUIHandler;
 
 
+
+    @SuppressLint("HandlerLeak")
+    Handler hand=new Handler(){  //刷新页面
+
+        @Override
+        public void handleMessage(Message msg) {
+            if(msg.what==1){
+                update();//本方法重复刷新页面
+            }
+            super.handleMessage(msg);
+        }
+
+    };
+
+    @SuppressLint("HandlerLeak")
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         setContentView(R.layout.activity_home);
 
-        titleBar = (TitleBar) findViewById(R.id.main_title);
-        titleBar.showLeftAndRight("来电拦截",
-                getResources().getDrawable(R.drawable.menu),
-                getResources().getDrawable(R.drawable.add),
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        main_dl.open();
-                    }
-                }, new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        SkipActivityforClass(HomeActivity.this,
-                                AddActivity.class);
-                    }
-                });
 
-        initDragLayout();
+        titleBar = (TitleBar) findViewById(R.id.main_title);
+
+        sClose = (SwitchButton) findViewById(R.id.filter_close);
+        sHei = (SwitchButton) findViewById(R.id.filter_hei);
+        sBai = (SwitchButton) findViewById(R.id.filter_bai);
+        sAi = (SwitchButton) findViewById(R.id.filter_ai);
+        sTime = (SwitchButton) findViewById(R.id.filter_time);
+        sLocation = (SwitchButton) findViewById(R.id.filter_location);
+        sAll = (SwitchButton) findViewById(R.id.filter_all);
+
+        main_layout = (LinearLayout) findViewById(R.id.filter_layout_one);
+        main_dl = (DragLayout) findViewById(R.id.main_dl);
+        filter_listview = (ListView) findViewById(R.id.filter_listview);
+
+        setting_ai=(TextView) findViewById(R.id.setting_ai);
+        setting_time=(TextView) findViewById(R.id.setting_time);
+        setting_location=(TextView) findViewById(R.id.setting_location);
+
+        setting_ai.setOnClickListener(this);
+        setting_time.setOnClickListener(this);
+        setting_location.setOnClickListener(this);
+
+
+
         initViews();
 
+        initDragLayout();
+
+        update();
+
     }
+
 
     @Override
     public void initData() {
@@ -112,7 +149,7 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
 
     private void initDragLayout(){
 
-        main_dl = (DragLayout) findViewById(R.id.main_dl);
+
         main_dl.setDragListener(new DragLayout.DragListener() {
             @Override
             public void onOpen() {
@@ -155,20 +192,7 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
     }
 
 
-    @Override
-    public void initViews() {
-        super.initViews();
-
-        main_layout = (LinearLayout) findViewById(R.id.filter_layout_one);
-
-        sClose = (SwitchButton) findViewById(R.id.filter_close);
-        sHei = (SwitchButton) findViewById(R.id.filter_hei);
-        sBai = (SwitchButton) findViewById(R.id.filter_bai);
-        sAi = (SwitchButton) findViewById(R.id.filter_ai);
-        sTime = (SwitchButton) findViewById(R.id.filter_time);
-        sLocation = (SwitchButton) findViewById(R.id.filter_location);
-        sAll = (SwitchButton) findViewById(R.id.filter_all);
-
+    private void update(){
 
         // 通过sharepreferenceDb进行设置
         if (new SharedPreferenceDb(HomeActivity.this).getClose() == true) {
@@ -184,21 +208,22 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenClose();
+
+                    hand.sendEmptyMessage(1);
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseClose();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
         });
 
-
         if (new SharedPreferenceDb(HomeActivity.this).getHei() == true) {
-            sClose.setChecked(true);
+            sHei.setChecked(true);
         } else {
-            sClose.setChecked(false);
+            sHei.setChecked(false);
         }
-
 
         sHei.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -207,18 +232,20 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenHei();
+                    hand.sendEmptyMessage(1);
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseHei();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
         });
 
         if (new SharedPreferenceDb(HomeActivity.this).getBai() == true) {
-            sClose.setChecked(true);
+            sBai.setChecked(true);
         } else {
-            sClose.setChecked(false);
+            sBai.setChecked(false);
         }
 
 
@@ -229,18 +256,20 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenBai();
+                    hand.sendEmptyMessage(1);
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseBai();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
         });
 
         if (new SharedPreferenceDb(HomeActivity.this).getAi() == true) {
-            sClose.setChecked(true);
+            sAi.setChecked(true);
         } else {
-            sClose.setChecked(false);
+            sAi.setChecked(false);
         }
 
 
@@ -251,19 +280,20 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenAi();
-                    SkipActivityforClass(HomeActivity.this,AiActivity.class);
+                    hand.sendEmptyMessage(1);
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseAi();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
         });
 
         if (new SharedPreferenceDb(HomeActivity.this).getTime() == true) {
-            sClose.setChecked(true);
+            sTime.setChecked(true);
         } else {
-            sClose.setChecked(false);
+            sTime.setChecked(false);
         }
 
 
@@ -274,19 +304,20 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenTime();
-                    SkipActivityforClass(HomeActivity.this,TimeActivity.class);
+                    hand.sendEmptyMessage(1);
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseTime();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
         });
 
         if (new SharedPreferenceDb(HomeActivity.this).getLocation() == true) {
-            sClose.setChecked(true);
+            sLocation.setChecked(true);
         } else {
-            sClose.setChecked(false);
+            sLocation.setChecked(false);
         }
 
 
@@ -297,12 +328,12 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenLocation();
-
-                    SkipActivityforClass(HomeActivity.this,LocationActivity.class);
+                    hand.sendEmptyMessage(1);
 
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseLocation();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
@@ -310,11 +341,10 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
 
 
         if (new SharedPreferenceDb(HomeActivity.this).getAll() == true) {
-            sClose.setChecked(true);
+            sAll.setChecked(true);
         } else {
-            sClose.setChecked(false);
+            sAll.setChecked(false);
         }
-
 
         sAll.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -323,19 +353,106 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                 if(isChecked){
                     new SharedPreferenceDb(HomeActivity.this)
                             .setOpenAll();
+                    hand.sendEmptyMessage(1);
                 }else{
                     new SharedPreferenceDb(HomeActivity.this)
                             .setCloseAll();
+                    hand.sendEmptyMessage(1);
                 }
 
             }
         });
 
-        filter_listview = (ListView) findViewById(R.id.filter_listview);
 
-        loadData(); //加载拦截记录
+        loadData();
+
+        setupBlocker();
+
+        //UI刷新线程
+        mUIHandler = new Handler(){
+
+            @Override
+            public void handleMessage(Message msg) {
+
+                String phonestr = msg.getData().getString("phone");
+                String datestr = msg.getData().getString("date");
+
+                HashMap<String, String> item = new HashMap<String, String>();
+                item.put("phone", phonestr);
+                item.put("date", datestr);
+
+                //需要将其写入到数据库
+                boolean bool = false;
+                int frequency = 0;
+
+                myDbHelper = new MyDbHelper(HomeActivity.this);
+                myDbHelper.open();
+
+                Cursor cur=myDbHelper.querData("record");
+                cur.moveToFirst();
+                while (!cur.isAfterLast()){
+                    if(phonestr.equals(cur.getString(0))){
+                        frequency=cur.getInt(1);
+                        frequency++;
+                        bool=true;
+                        break;
+                    }
+
+                    cur.moveToNext();
+                }
+
+                if(bool){
+                    myDbHelper.updataData(datestr,frequency,phonestr,"record");
+                }else{
+                    myDbHelper.insertData(phonestr,1,datestr,"record");
+                }
+
+                myDbHelper.close();
+
+                //刷新  或者将adpter 写到loadData的外面
+                loadData();
+                filter_listview.invalidate();
 
 
+                // 通知栏提示
+                Context context = HomeActivity.this;
+                NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+                Notification.Builder builder = new Notification.Builder(context);
+                Notification notification = builder
+                        .setContentTitle(phonestr)
+                        .setContentText(datestr)
+                        .setSmallIcon(android.R.drawable.ic_dialog_info)
+                        .build();
+
+                notificationManager.notify(22, notification);
+            }
+        };
+
+
+
+
+    }
+
+
+    @Override
+    public void initViews() {
+        super.initViews();
+
+        titleBar.showLeftAndRight("来电拦截",
+                getResources().getDrawable(R.drawable.menu),
+                getResources().getDrawable(R.drawable.add),
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        main_dl.open();
+                    }
+                }, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        SkipActivityforClass(HomeActivity.this,
+                                AddActivity.class);
+                    }
+                });
 
     }
 
@@ -397,7 +514,7 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
                         myDbHelper.deleteData(phones.get(count), "record");
                         myDbHelper.close();
 
-                        loadData();  //刷新页面
+                        update();
 
                     }
                 });
@@ -408,40 +525,6 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
 
         filter_listview.setAdapter(adapter);
 
-        setupBlocker();
-
-        //UI刷新线程
-        mUIHandler = new Handler(){
-
-            @Override
-            public void handleMessage(Message msg) {
-                String phonestr = msg.getData().getString("phone");
-                String datestr = msg.getData().getString("date");
-
-                HashMap<String, String> item = new HashMap<String, String>();
-                item.put("phone", phonestr);
-                item.put("date", datestr);
-
-                //需要将其写入到数据库
-
-                //刷新  或者将adpter 写到loadData的外面
-                loadData();
-                filter_listview.invalidate();
-
-
-                // 通知栏提示
-                Context context = HomeActivity.this;
-                NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-                Notification.Builder builder = new Notification.Builder(context);
-                Notification notification = builder
-                        .setContentTitle(phonestr)
-                        .setContentText(datestr)
-                        .setSmallIcon(android.R.drawable.ic_dialog_info)
-                        .build();
-
-                notificationManager.notify(22, notification);
-            }
-        };
     }
 
 
@@ -449,31 +532,115 @@ public class HomeActivity extends  BaseActivity implements View.OnClickListener{
     {
         BlockerBuilder builder = new BlockerBuilder();
 
-        //代码修改
-        mBlocker = builder
-                .setTrigger(mTrigger)
-                .setHandler(mHandler)
-                .addFilters(new NumeralFilter(IFilter.OP_PASS, "95555", "95588")) 		 //实现白名单放行
-                .addFilters(new NumeralFilter(IFilter.OP_BLOCKED, "106223", "107445"))   //实现黑名单放行
-                .addFilters(new PrefixFilter(IFilter.OP_BLOCKED, "156", "10086", "134")) //前缀拦截
-//				.addFilters(new LocationFilter()) //实现归属地拦截， 进阶课程的内容
-//				.addFilters(new SystemContactFilter()) //系统联系人过滤， 进阶课程的内容
-                .create();
 
-        mBlocker.enable();
+        //代码修改
+        builder.setTrigger(mTrigger);
+        builder.setHandler(mHandler);
+
+        builder.addFilters(new PrefixFilter(IFilter.OP_BLOCKED, "156", "10086", "134")); //前缀拦截
+
+        if(new SharedPreferenceDb(HomeActivity.this).getBai()){
+            builder.addFilters(new NumeralFilter(IFilter.OP_PASS,getBais()));
+        }
+        if(new SharedPreferenceDb(HomeActivity.this).getHei()){
+            builder.addFilters(new NumeralFilter(IFilter.OP_BLOCKED,getHeis()));
+        }
+        if(new SharedPreferenceDb(HomeActivity.this).getAi()){
+
+        }
+        if(new SharedPreferenceDb(HomeActivity.this).getAll()){
+
+        }
+        if(new SharedPreferenceDb(HomeActivity.this).getLocation()){
+
+        }
+        if(new SharedPreferenceDb(HomeActivity.this).getTime()){
+
+        }
+
+        mBlocker = builder.create();
+
+        if(new SharedPreferenceDb(HomeActivity.this).getClose()){
+            mBlocker.disable();
+        }else{
+            mBlocker.enable();
+        }
+
+    }
+
+    private String[] getBais(){
+
+        myDbHelper = new MyDbHelper(HomeActivity.this);
+        myDbHelper.open();
+        Cursor cursor = myDbHelper.querData("white");
+
+        int size = cursor.getCount();
+
+        String[] bais = new String[size];
+        int i=0;
+
+        cursor.moveToFirst();
+        while(!cursor.isAfterLast()){
+
+            bais[i] = cursor.getString(0);
+            i++;
+            cursor.moveToNext();
+        }
+
+        myDbHelper.close();
+
+        return bais;
+
+    }
+
+
+    private String[] getHeis(){
+
+        myDbHelper = new MyDbHelper(HomeActivity.this);
+        myDbHelper.open();
+        Cursor cursor = myDbHelper.querData("black");
+
+        int size = cursor.getCount();
+
+        String[] heis = new String[size];
+        int i=0;
+
+        cursor.moveToFirst();
+        while(!cursor.isAfterLast()){
+
+            heis[i] = cursor.getString(0);
+            i++;
+            cursor.moveToNext();
+        }
+
+        myDbHelper.close();
+
+        return heis;
 
     }
 
     @Override
     public void onClick(View v) {
 
+        switch(v.getId()){
+            case R.id.setting_ai:
+                SkipActivityforClass(HomeActivity.this,AiActivity.class);
+                break;
+            case R.id.setting_time:
+                SkipActivityforClass(HomeActivity.this,TimeActivity.class);
+                break;
+            case R.id.setting_location:
+                SkipActivityforClass(HomeActivity.this,LocationActivity.class);
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
     }
-
 
 
 }

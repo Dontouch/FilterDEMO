@@ -73,6 +73,11 @@ public class HeiListAdapter extends BaseAdapter {
         String number = hei.getNumber();
         String frequency = hei.getFrequency();
 
+
+        if("".equals(name)){
+            name ="陌生人";
+        }
+
         holder.name.setText(name);
         holder.number.setText(number);
         holder.fequency.setText(frequency);
